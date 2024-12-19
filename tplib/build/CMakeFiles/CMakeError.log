@@ -1,0 +1,47 @@
+Checking whether the C compiler is IAR using "" did not match "IAR .+ Compiler":
+cc: fatal error: no input files
+compilation terminated.
+Checking whether the C compiler is IAR using "" did not match "IAR .+ Compiler":
+cc: fatal error: no input files
+compilation terminated.
+Checking whether the CXX compiler is IAR using "" did not match "IAR .+ Compiler":
+c++: fatal error: no input files
+compilation terminated.
+Checking whether the CXX compiler is IAR using "" did not match "IAR .+ Compiler":
+c++: fatal error: no input files
+compilation terminated.
+Detecting C compiler ABI info failed to compile with the following output:
+Change Dir: /home/tempus/programs/projects/tplib/build/CMakeFiles/CMakeScratch/TryCompile-NQEILB
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_3b64d/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_3b64d.dir/build.make CMakeFiles/cmTC_3b64d.dir/build
+gmake[1]: Entering directory '/home/tempus/programs/projects/tplib/build/CMakeFiles/CMakeScratch/TryCompile-NQEILB'
+Building C object CMakeFiles/cmTC_3b64d.dir/CMakeCCompilerABI.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_3b64d.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.25/Modules/CMakeCCompilerABI.c
+/usr/share/cmake-3.25/Modules/CMakeCCompilerABI.c:27:1: fatal error: error closing /tmp/ccrAcIl7.s: No space left on device
+   27 | }
+      | ^
+compilation terminated.
+gmake[1]: *** [CMakeFiles/cmTC_3b64d.dir/build.make:78: CMakeFiles/cmTC_3b64d.dir/CMakeCCompilerABI.c.o] Error 1
+gmake[1]: Leaving directory '/home/tempus/programs/projects/tplib/build/CMakeFiles/CMakeScratch/TryCompile-NQEILB'
+gmake: *** [Makefile:127: cmTC_3b64d/fast] Error 2
+
+
+
+
+Determining if the C compiler works failed with the following output:
+Change Dir: /home/tempus/programs/projects/tplib/build/CMakeFiles/CMakeScratch/TryCompile-2b5eRX
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_3eb15/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_3eb15.dir/build.make CMakeFiles/cmTC_3eb15.dir/build
+gmake[1]: Entering directory '/home/tempus/programs/projects/tplib/build/CMakeFiles/CMakeScratch/TryCompile-2b5eRX'
+Building C object CMakeFiles/cmTC_3eb15.dir/testCCompiler.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_3eb15.dir/testCCompiler.c.o -c /home/tempus/programs/projects/tplib/build/CMakeFiles/CMakeScratch/TryCompile-2b5eRX/testCCompiler.c
+/home/tempus/programs/projects/tplib/build/CMakeFiles/CMakeScratch/TryCompile-2b5eRX/testCCompiler.c:11:1: fatal error: error closing /tmp/ccql2iSl.s: No space left on device
+   11 | { (void)argv; return argc-1;}
+      | ^
+compilation terminated.
+gmake[1]: *** [CMakeFiles/cmTC_3eb15.dir/build.make:78: CMakeFiles/cmTC_3eb15.dir/testCCompiler.c.o] Error 1
+gmake[1]: Leaving directory '/home/tempus/programs/projects/tplib/build/CMakeFiles/CMakeScratch/TryCompile-2b5eRX'
+gmake: *** [Makefile:127: cmTC_3eb15/fast] Error 2
+
+
+
