@@ -1,0 +1,1 @@
+/usr/bin/c++ -fsanitize=address CMakeFiles/tplib.dir/src/common/io.cpp.o CMakeFiles/tplib.dir/src/common/math.cpp.o CMakeFiles/tplib.dir/src/linux/system.cpp.o CMakeFiles/tplib.dir/src/linux/system_io.cpp.o CMakeFiles/tplib.dir/main.cpp.o -o tplib 
