@@ -153,29 +153,29 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tplib.dir/build.make CMakeFiles/tplib.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-src/common/io.o: src/common/io.cpp.o
-.PHONY : src/common/io.o
+src/common/io/io.o: src/common/io/io.cpp.o
+.PHONY : src/common/io/io.o
 
 # target to build an object file
-src/common/io.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tplib.dir/build.make CMakeFiles/tplib.dir/src/common/io.cpp.o
-.PHONY : src/common/io.cpp.o
+src/common/io/io.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tplib.dir/build.make CMakeFiles/tplib.dir/src/common/io/io.cpp.o
+.PHONY : src/common/io/io.cpp.o
 
-src/common/io.i: src/common/io.cpp.i
-.PHONY : src/common/io.i
+src/common/io/io.i: src/common/io/io.cpp.i
+.PHONY : src/common/io/io.i
 
 # target to preprocess a source file
-src/common/io.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tplib.dir/build.make CMakeFiles/tplib.dir/src/common/io.cpp.i
-.PHONY : src/common/io.cpp.i
+src/common/io/io.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tplib.dir/build.make CMakeFiles/tplib.dir/src/common/io/io.cpp.i
+.PHONY : src/common/io/io.cpp.i
 
-src/common/io.s: src/common/io.cpp.s
-.PHONY : src/common/io.s
+src/common/io/io.s: src/common/io/io.cpp.s
+.PHONY : src/common/io/io.s
 
 # target to generate assembly for a file
-src/common/io.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tplib.dir/build.make CMakeFiles/tplib.dir/src/common/io.cpp.s
-.PHONY : src/common/io.cpp.s
+src/common/io/io.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tplib.dir/build.make CMakeFiles/tplib.dir/src/common/io/io.cpp.s
+.PHONY : src/common/io/io.cpp.s
 
 src/common/math.o: src/common/math.cpp.o
 .PHONY : src/common/math.o
@@ -200,6 +200,102 @@ src/common/math.s: src/common/math.cpp.s
 src/common/math.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tplib.dir/build.make CMakeFiles/tplib.dir/src/common/math.cpp.s
 .PHONY : src/common/math.cpp.s
+
+src/common/string/format.o: src/common/string/format.cpp.o
+.PHONY : src/common/string/format.o
+
+# target to build an object file
+src/common/string/format.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tplib.dir/build.make CMakeFiles/tplib.dir/src/common/string/format.cpp.o
+.PHONY : src/common/string/format.cpp.o
+
+src/common/string/format.i: src/common/string/format.cpp.i
+.PHONY : src/common/string/format.i
+
+# target to preprocess a source file
+src/common/string/format.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tplib.dir/build.make CMakeFiles/tplib.dir/src/common/string/format.cpp.i
+.PHONY : src/common/string/format.cpp.i
+
+src/common/string/format.s: src/common/string/format.cpp.s
+.PHONY : src/common/string/format.s
+
+# target to generate assembly for a file
+src/common/string/format.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tplib.dir/build.make CMakeFiles/tplib.dir/src/common/string/format.cpp.s
+.PHONY : src/common/string/format.cpp.s
+
+src/common/string/format_int.o: src/common/string/format_int.cpp.o
+.PHONY : src/common/string/format_int.o
+
+# target to build an object file
+src/common/string/format_int.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tplib.dir/build.make CMakeFiles/tplib.dir/src/common/string/format_int.cpp.o
+.PHONY : src/common/string/format_int.cpp.o
+
+src/common/string/format_int.i: src/common/string/format_int.cpp.i
+.PHONY : src/common/string/format_int.i
+
+# target to preprocess a source file
+src/common/string/format_int.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tplib.dir/build.make CMakeFiles/tplib.dir/src/common/string/format_int.cpp.i
+.PHONY : src/common/string/format_int.cpp.i
+
+src/common/string/format_int.s: src/common/string/format_int.cpp.s
+.PHONY : src/common/string/format_int.s
+
+# target to generate assembly for a file
+src/common/string/format_int.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tplib.dir/build.make CMakeFiles/tplib.dir/src/common/string/format_int.cpp.s
+.PHONY : src/common/string/format_int.cpp.s
+
+src/common/string/manipulation.o: src/common/string/manipulation.cpp.o
+.PHONY : src/common/string/manipulation.o
+
+# target to build an object file
+src/common/string/manipulation.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tplib.dir/build.make CMakeFiles/tplib.dir/src/common/string/manipulation.cpp.o
+.PHONY : src/common/string/manipulation.cpp.o
+
+src/common/string/manipulation.i: src/common/string/manipulation.cpp.i
+.PHONY : src/common/string/manipulation.i
+
+# target to preprocess a source file
+src/common/string/manipulation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tplib.dir/build.make CMakeFiles/tplib.dir/src/common/string/manipulation.cpp.i
+.PHONY : src/common/string/manipulation.cpp.i
+
+src/common/string/manipulation.s: src/common/string/manipulation.cpp.s
+.PHONY : src/common/string/manipulation.s
+
+# target to generate assembly for a file
+src/common/string/manipulation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tplib.dir/build.make CMakeFiles/tplib.dir/src/common/string/manipulation.cpp.s
+.PHONY : src/common/string/manipulation.cpp.s
+
+src/common/string/scan.o: src/common/string/scan.cpp.o
+.PHONY : src/common/string/scan.o
+
+# target to build an object file
+src/common/string/scan.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tplib.dir/build.make CMakeFiles/tplib.dir/src/common/string/scan.cpp.o
+.PHONY : src/common/string/scan.cpp.o
+
+src/common/string/scan.i: src/common/string/scan.cpp.i
+.PHONY : src/common/string/scan.i
+
+# target to preprocess a source file
+src/common/string/scan.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tplib.dir/build.make CMakeFiles/tplib.dir/src/common/string/scan.cpp.i
+.PHONY : src/common/string/scan.cpp.i
+
+src/common/string/scan.s: src/common/string/scan.cpp.s
+.PHONY : src/common/string/scan.s
+
+# target to generate assembly for a file
+src/common/string/scan.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tplib.dir/build.make CMakeFiles/tplib.dir/src/common/string/scan.cpp.s
+.PHONY : src/common/string/scan.cpp.s
 
 src/linux/system.o: src/linux/system.cpp.o
 .PHONY : src/linux/system.o
@@ -261,12 +357,24 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... src/common/io.o"
-	@echo "... src/common/io.i"
-	@echo "... src/common/io.s"
+	@echo "... src/common/io/io.o"
+	@echo "... src/common/io/io.i"
+	@echo "... src/common/io/io.s"
 	@echo "... src/common/math.o"
 	@echo "... src/common/math.i"
 	@echo "... src/common/math.s"
+	@echo "... src/common/string/format.o"
+	@echo "... src/common/string/format.i"
+	@echo "... src/common/string/format.s"
+	@echo "... src/common/string/format_int.o"
+	@echo "... src/common/string/format_int.i"
+	@echo "... src/common/string/format_int.s"
+	@echo "... src/common/string/manipulation.o"
+	@echo "... src/common/string/manipulation.i"
+	@echo "... src/common/string/manipulation.s"
+	@echo "... src/common/string/scan.o"
+	@echo "... src/common/string/scan.i"
+	@echo "... src/common/string/scan.s"
 	@echo "... src/linux/system.o"
 	@echo "... src/linux/system.i"
 	@echo "... src/linux/system.s"

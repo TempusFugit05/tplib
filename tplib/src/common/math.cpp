@@ -1,7 +1,4 @@
-#define MAX_SIGNED(TYPE) (~(TYPE(1) << ((sizeof(TYPE) * 8) - 1)))
-#define MIN_SIGNED(TYPE) ((TYPE(1) << ((sizeof(TYPE) * 8) - 1)))
-#define MAX_UNSIGNED(TYPE) (~TYPE(0))
-#define MIN_UNSIGNED() (0)
+#include "math.h"
 
 // Returns the absolute value of a number.
 int absolute(int value)

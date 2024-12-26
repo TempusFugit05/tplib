@@ -1,6 +1,5 @@
 #ifndef SYSTEM_PARAMS_H
 #define SYSTEM_PARAMS_H
 
-#define STDOUT_FILE 1
-
+#include <unistd.h>
 #endif // SYSTEM_PARAMS_H 
