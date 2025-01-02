@@ -31,7 +31,6 @@ CMakeFiles/tplib.dir/main.cpp.o: /home/tempus/programs/projects/tplib/main.cpp \
   /usr/include/x86_64-linux-gnu/c++/12/bits/os_defines.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/cpu_defines.h \
   /usr/include/c++/12/pstl/pstl_config.h \
-  /home/tempus/programs/projects/tplib/include/common/io/system_io.h \
   /home/tempus/programs/projects/tplib/include/linux/system_files.h \
   /home/tempus/programs/projects/tplib/include/common/string/string.h \
   /home/tempus/programs/projects/tplib/include/common/string/manipulation.h \
@@ -56,7 +55,6 @@ CMakeFiles/tplib.dir/src/common/io/io.cpp.o: /home/tempus/programs/projects/tpli
   /usr/include/x86_64-linux-gnu/c++/12/bits/cpu_defines.h \
   /usr/include/c++/12/pstl/pstl_config.h \
   /usr/lib/gcc/x86_64-linux-gnu/12/include/stddef.h \
-  /home/tempus/programs/projects/tplib/include/common/io/system_io.h \
   /home/tempus/programs/projects/tplib/include/linux/system_params.h \
   /usr/include/unistd.h \
   /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
@@ -69,9 +67,9 @@ CMakeFiles/tplib.dir/src/common/io/io.cpp.o: /home/tempus/programs/projects/tpli
   /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
   /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
   /usr/include/linux/close_range.h \
+  /home/tempus/programs/projects/tplib/include/linux/system_io.h \
   /home/tempus/programs/projects/tplib/include/common/io/io.h \
   /home/tempus/programs/projects/tplib/include/common/string/string_utils.h \
-  /home/tempus/programs/projects/tplib/include/common/io/system_io.h \
   /home/tempus/programs/projects/tplib/include/linux/system_files.h \
   /home/tempus/programs/projects/tplib/include/common/string/string.h \
   /home/tempus/programs/projects/tplib/include/common/string/manipulation.h \
@@ -102,9 +100,25 @@ CMakeFiles/tplib.dir/src/common/string/format.cpp.o: /home/tempus/programs/proje
   /usr/include/x86_64-linux-gnu/c++/12/bits/cpu_defines.h \
   /usr/include/c++/12/pstl/pstl_config.h \
   /usr/lib/gcc/x86_64-linux-gnu/12/include/stddef.h \
+  /usr/include/c++/12/cstdio \
+  /usr/include/stdio.h \
+  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
+  /usr/lib/gcc/x86_64-linux-gnu/12/include/stdarg.h \
+  /usr/include/x86_64-linux-gnu/bits/types.h \
+  /usr/include/x86_64-linux-gnu/bits/typesizes.h \
+  /usr/include/x86_64-linux-gnu/bits/time64.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/floatn.h \
+  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
   /home/tempus/programs/projects/tplib/include/common/math.h \
   /home/tempus/programs/projects/tplib/include/common/string/format.h \
-  /usr/lib/gcc/x86_64-linux-gnu/12/include/stdarg.h \
   /home/tempus/programs/projects/tplib/include/common/string/string.h \
   /home/tempus/programs/projects/tplib/include/common/string/manipulation.h \
   /home/tempus/programs/projects/tplib/include/common/string/format.h \
@@ -117,15 +131,11 @@ CMakeFiles/tplib.dir/src/common/string/format.cpp.o: /home/tempus/programs/proje
   /usr/include/unistd.h \
   /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
   /usr/include/x86_64-linux-gnu/bits/environments.h \
-  /usr/include/x86_64-linux-gnu/bits/types.h \
-  /usr/include/x86_64-linux-gnu/bits/typesizes.h \
-  /usr/include/x86_64-linux-gnu/bits/time64.h \
   /usr/include/x86_64-linux-gnu/bits/confname.h \
   /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
   /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
   /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
   /usr/include/linux/close_range.h \
-  /home/tempus/programs/projects/tplib/include/common/io/system_io.h \
   /home/tempus/programs/projects/tplib/include/linux/system_files.h
 
 CMakeFiles/tplib.dir/src/common/string/format_int.cpp.o: /home/tempus/programs/projects/tplib/src/common/string/format_int.cpp \
@@ -145,6 +155,22 @@ CMakeFiles/tplib.dir/src/common/string/format_int.cpp.o: /home/tempus/programs/p
   /usr/include/c++/12/pstl/pstl_config.h \
   /usr/lib/gcc/x86_64-linux-gnu/12/include/stddef.h \
   /usr/lib/gcc/x86_64-linux-gnu/12/include/stdarg.h \
+  /usr/include/c++/12/cstdio \
+  /usr/include/stdio.h \
+  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
+  /usr/include/x86_64-linux-gnu/bits/types.h \
+  /usr/include/x86_64-linux-gnu/bits/typesizes.h \
+  /usr/include/x86_64-linux-gnu/bits/time64.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/floatn.h \
+  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
   /home/tempus/programs/projects/tplib/include/common/string/string.h \
   /home/tempus/programs/projects/tplib/include/common/string/manipulation.h \
   /home/tempus/programs/projects/tplib/include/common/string/format.h \
@@ -154,9 +180,6 @@ CMakeFiles/tplib.dir/src/common/string/format_int.cpp.o: /home/tempus/programs/p
   /usr/include/unistd.h \
   /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
   /usr/include/x86_64-linux-gnu/bits/environments.h \
-  /usr/include/x86_64-linux-gnu/bits/types.h \
-  /usr/include/x86_64-linux-gnu/bits/typesizes.h \
-  /usr/include/x86_64-linux-gnu/bits/time64.h \
   /usr/include/x86_64-linux-gnu/bits/confname.h \
   /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
   /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
@@ -202,7 +225,6 @@ CMakeFiles/tplib.dir/src/common/string/manipulation.cpp.o: /home/tempus/programs
   /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
   /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
   /usr/include/linux/close_range.h \
-  /home/tempus/programs/projects/tplib/include/common/io/system_io.h \
   /home/tempus/programs/projects/tplib/include/linux/system_files.h
 
 CMakeFiles/tplib.dir/src/common/string/scan.cpp.o: /home/tempus/programs/projects/tplib/src/common/string/scan.cpp \
@@ -222,6 +244,23 @@ CMakeFiles/tplib.dir/src/common/string/scan.cpp.o: /home/tempus/programs/project
   /usr/include/x86_64-linux-gnu/c++/12/bits/cpu_defines.h \
   /usr/include/c++/12/pstl/pstl_config.h \
   /usr/lib/gcc/x86_64-linux-gnu/12/include/stddef.h \
+  /usr/include/c++/12/cstdio \
+  /usr/include/stdio.h \
+  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
+  /usr/lib/gcc/x86_64-linux-gnu/12/include/stdarg.h \
+  /usr/include/x86_64-linux-gnu/bits/types.h \
+  /usr/include/x86_64-linux-gnu/bits/typesizes.h \
+  /usr/include/x86_64-linux-gnu/bits/time64.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/floatn.h \
+  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
   /home/tempus/programs/projects/tplib/define/dev_debug.h \
   /home/tempus/programs/projects/tplib/include/common/system.h \
   /home/tempus/programs/projects/tplib/include/common/io/io.h \
@@ -230,20 +269,15 @@ CMakeFiles/tplib.dir/src/common/string/scan.cpp.o: /home/tempus/programs/project
   /usr/include/unistd.h \
   /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
   /usr/include/x86_64-linux-gnu/bits/environments.h \
-  /usr/include/x86_64-linux-gnu/bits/types.h \
-  /usr/include/x86_64-linux-gnu/bits/typesizes.h \
-  /usr/include/x86_64-linux-gnu/bits/time64.h \
   /usr/include/x86_64-linux-gnu/bits/confname.h \
   /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
   /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
   /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
   /usr/include/linux/close_range.h \
-  /home/tempus/programs/projects/tplib/include/common/io/system_io.h \
   /home/tempus/programs/projects/tplib/include/linux/system_files.h \
   /home/tempus/programs/projects/tplib/include/common/string/string.h \
   /home/tempus/programs/projects/tplib/include/common/string/manipulation.h \
   /home/tempus/programs/projects/tplib/include/common/string/format.h \
-  /usr/lib/gcc/x86_64-linux-gnu/12/include/stdarg.h \
   /home/tempus/programs/projects/tplib/include/common/string/scan.h \
   /home/tempus/programs/projects/tplib/include/common/math.h
 
@@ -327,7 +361,7 @@ CMakeFiles/tplib.dir/src/linux/system_io.cpp.o: /home/tempus/programs/projects/t
   /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
   /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
   /usr/include/linux/close_range.h \
-  /home/tempus/programs/projects/tplib/include/common/io/system_io.h
+  /home/tempus/programs/projects/tplib/include/linux/system_io.h
 
 
 /home/tempus/programs/projects/tplib/src/linux/system_io.cpp:
@@ -342,13 +376,9 @@ CMakeFiles/tplib.dir/src/linux/system_io.cpp.o: /home/tempus/programs/projects/t
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_sigstack.h:
 
-/usr/include/x86_64-linux-gnu/bits/ss_flags.h:
-
 /usr/include/x86_64-linux-gnu/bits/sigstack.h:
 
 /usr/include/x86_64-linux-gnu/sys/ucontext.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/stack_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/sigaction.h:
 
@@ -360,13 +390,41 @@ CMakeFiles/tplib.dir/src/linux/system_io.cpp.o: /home/tempus/programs/projects/t
 
 /usr/include/x86_64-linux-gnu/bits/types/__sigval_t.h:
 
+/usr/include/x86_64-linux-gnu/bits/types/siginfo_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/time_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/endian.h:
+
+/usr/include/x86_64-linux-gnu/bits/signum-arch.h:
+
+/usr/include/x86_64-linux-gnu/bits/sigcontext.h:
+
+/usr/include/x86_64-linux-gnu/bits/signum-generic.h:
+
+/home/tempus/programs/projects/tplib/src/common/string/scan.cpp:
+
 /usr/include/x86_64-linux-gnu/c++/12/bits/os_defines.h:
 
 /home/tempus/programs/projects/tplib/include/common/io/io.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/siginfo_t.h:
+/usr/include/x86_64-linux-gnu/bits/types/FILE.h:
+
+/usr/include/signal.h:
+
+/usr/include/x86_64-linux-gnu/bits/environments.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/sig_atomic_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/confname.h:
 
 /usr/include/x86_64-linux-gnu/bits/typesizes.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/stack_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h:
 
 /usr/include/x86_64-linux-gnu/bits/endianness.h:
 
@@ -374,13 +432,7 @@ CMakeFiles/tplib.dir/src/linux/system_io.cpp.o: /home/tempus/programs/projects/t
 
 /home/tempus/programs/projects/tplib/include/common/string/format.h:
 
-/usr/include/x86_64-linux-gnu/bits/sigcontext.h:
-
-/usr/include/x86_64-linux-gnu/bits/signum-generic.h:
-
 /home/tempus/programs/projects/tplib/include/linux/system_params.h:
-
-/home/tempus/programs/projects/tplib/src/common/string/scan.cpp:
 
 /usr/include/x86_64-linux-gnu/bits/sigthread.h:
 
@@ -398,6 +450,10 @@ CMakeFiles/tplib.dir/src/linux/system_io.cpp.o: /home/tempus/programs/projects/t
 
 /usr/include/x86_64-linux-gnu/bits/types.h:
 
+/usr/include/x86_64-linux-gnu/bits/ss_flags.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
+
 /usr/include/stdc-predef.h:
 
 /usr/include/x86_64-linux-gnu/c++/12/bits/cpu_defines.h:
@@ -406,15 +462,13 @@ CMakeFiles/tplib.dir/src/linux/system_io.cpp.o: /home/tempus/programs/projects/t
 
 /home/tempus/programs/projects/tplib/include/common/string/scan.h:
 
-/usr/include/x86_64-linux-gnu/bits/endian.h:
-
 /usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h:
 
 /home/tempus/programs/projects/tplib/include/common/string/string_utils.h:
 
 /usr/include/x86_64-linux-gnu/sys/cdefs.h:
-
-/usr/include/x86_64-linux-gnu/bits/getopt_posix.h:
 
 /usr/include/unistd.h:
 
@@ -423,12 +477,6 @@ CMakeFiles/tplib.dir/src/linux/system_io.cpp.o: /home/tempus/programs/projects/t
 /usr/include/x86_64-linux-gnu/c++/12/bits/c++config.h:
 
 /usr/include/x86_64-linux-gnu/bits/wordsize.h:
-
-/usr/include/x86_64-linux-gnu/bits/environments.h:
-
-/usr/include/signal.h:
-
-/usr/include/x86_64-linux-gnu/bits/unistd_ext.h:
 
 /home/tempus/programs/projects/tplib/include/common/math.h:
 
@@ -440,17 +488,17 @@ CMakeFiles/tplib.dir/src/linux/system_io.cpp.o: /home/tempus/programs/projects/t
 
 /usr/include/features-time64.h:
 
-/home/tempus/programs/projects/tplib/include/common/io/system_io.h:
+/usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h:
 
-/usr/include/x86_64-linux-gnu/bits/getopt_core.h:
-
-/usr/include/x86_64-linux-gnu/bits/timesize.h:
+/usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/posix_opt.h:
 
-/usr/include/c++/12/pstl/pstl_config.h:
+/usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
 
-/home/tempus/programs/projects/tplib/include/linux/system_files.h:
+/usr/include/x86_64-linux-gnu/bits/long-double.h:
+
+/usr/include/c++/12/pstl/pstl_config.h:
 
 /home/tempus/programs/projects/tplib/include/common/string/string.h:
 
@@ -460,13 +508,13 @@ CMakeFiles/tplib.dir/src/linux/system_io.cpp.o: /home/tempus/programs/projects/t
 
 /usr/lib/gcc/x86_64-linux-gnu/12/include/stdarg.h:
 
-/usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h:
+/usr/include/x86_64-linux-gnu/bits/unistd_ext.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/time_t.h:
-
-/home/tempus/programs/projects/tplib/src/common/io/io.cpp:
+/home/tempus/programs/projects/tplib/include/linux/system_io.h:
 
 /home/tempus/programs/projects/tplib/define/dev_debug.h:
+
+/usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
 
 /usr/include/c++/12/cstddef:
 
@@ -474,24 +522,36 @@ CMakeFiles/tplib.dir/src/linux/system_io.cpp.o: /home/tempus/programs/projects/t
 
 /home/tempus/programs/projects/tplib/src/common/string/format.cpp:
 
+/usr/include/x86_64-linux-gnu/bits/getopt_core.h:
+
+/usr/include/x86_64-linux-gnu/bits/timesize.h:
+
+/usr/include/c++/12/cstdio:
+
+/usr/include/x86_64-linux-gnu/bits/getopt_posix.h:
+
+/usr/include/stdio.h:
+
 /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/time64.h:
 
 /home/tempus/programs/projects/tplib/src/common/string/format_int.cpp:
 
+/usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h:
+
+/home/tempus/programs/projects/tplib/include/linux/system_files.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/__FILE.h:
+
+/usr/include/x86_64-linux-gnu/bits/floatn.h:
+
 /usr/include/x86_64-linux-gnu/bits/sigstksz.h:
 
 /home/tempus/programs/projects/tplib/src/common/string/manipulation.cpp:
 
-/usr/include/x86_64-linux-gnu/bits/signum-arch.h:
+/home/tempus/programs/projects/tplib/src/common/io/io.cpp:
 
-/usr/include/x86_64-linux-gnu/bits/confname.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/sig_atomic_t.h:
-
-/usr/include/x86_64-linux-gnu/bits/long-double.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:
+/usr/include/x86_64-linux-gnu/bits/floatn-common.h:

@@ -26,7 +26,6 @@ CMakeFiles/tplib.dir/main.cpp.o: \
  /usr/include/x86_64-linux-gnu/c++/12/bits/os_defines.h \
  /usr/include/x86_64-linux-gnu/c++/12/bits/cpu_defines.h \
  /usr/include/c++/12/pstl/pstl_config.h \
- /home/tempus/programs/projects/tplib/include/common/io/system_io.h \
  /home/tempus/programs/projects/tplib/include/linux/system_files.h \
  /home/tempus/programs/projects/tplib/include/common/string/string.h \
  /home/tempus/programs/projects/tplib/include/common/string/manipulation.h \

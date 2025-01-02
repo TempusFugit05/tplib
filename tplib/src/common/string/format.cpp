@@ -1,4 +1,5 @@
 #include <cstddef>
+#include <cstdio>
 
 #include "math.h"
 #include "format.h"
@@ -59,7 +60,6 @@ size_t to_str(int integer, char* const buffer, const size_t buffer_size, const i
         }
         return num_chars + 1;
     }
-    
     else
     {
         // Calculate digits of the number and set string characters.

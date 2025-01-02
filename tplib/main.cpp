@@ -2,5 +2,5 @@
 
 int main()
 {
-    print("HELLO WORLD $ib2s e8", 9999999);
+    print("HELLO WORLD $ib2s,e3", 69);
 }

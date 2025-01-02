@@ -1,5 +1,6 @@
 #include <cstddef>
 #include <stdarg.h>
+#include <cstdio>
 
 #include "string.h"
 #include "string_utils.h"
@@ -33,9 +34,13 @@ size_t format_base(const char* const format, size_t format_size, int_format_sett
             settings->capitalized = true;
         }
         format_offset++; // Move after modifier char.
-        str_num_struct found_base = str_to_num(format + format_offset, format_size - format_offset); // Turn base to number.
+        str_num_struct found_base = str_to_num(
+        format + format_offset,
+        format_size - format_offset,
+        false,
+        10,
+        false); // Turn base to number.
         int new_base = found_base.number;
-        
         if(found_base.status != -1 && new_base >= 2 && new_base <= BASE_MAX)
         {
             settings->base = new_base;
@@ -145,8 +150,20 @@ offsets_struct format_int(const char* const format, size_t format_size, char* co
         }
         format_offset += offset;
     }
-        
-    return {to_str(to_format, buffer, buffer_size, settings.base, settings.capitalized, settings.big_endian, settings.seperator, settings.seperate_every), format_offset};
+    
+    size_t num_chars =
+        to_str(
+        to_format,
+        buffer,
+        buffer_size,
+        settings.base,
+        settings.capitalized,
+        settings.big_endian,
+        settings.seperator,
+        settings.seperate_every
+        );
+             
+    return {num_chars ,format_offset};
 }
 
 // Return the index of the first occurance of a character in a string.

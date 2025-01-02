@@ -2,7 +2,6 @@
 #define IO_H
 
 #include "string_utils.h"
-#include "system_io.h"
 #include "system_files.h"
 #include "string.h"
 

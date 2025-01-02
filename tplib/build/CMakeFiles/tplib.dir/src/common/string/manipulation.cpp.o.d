@@ -34,5 +34,4 @@ CMakeFiles/tplib.dir/src/common/string/manipulation.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
  /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
  /usr/include/linux/close_range.h \
- /home/tempus/programs/projects/tplib/include/common/io/system_io.h \
  /home/tempus/programs/projects/tplib/include/linux/system_files.h

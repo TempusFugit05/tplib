@@ -1,6 +1,7 @@
 #include "scan.h"
 
 #include <cstddef>
+#include <cstdio>
 
 #include "dev_debug.h"
 #include "math.h"
@@ -44,7 +45,6 @@ str_num_struct str_to_num(const char* str, size_t str_size, const bool search_wh
     if(number_found)
     {
         int pwr = power(base, digit_count - 1);
-        
         for(size_t i = number_start; (int)i < number_start + digit_count; i++)
         {
             int digit = char_to_digit(str[i], capitalized);
@@ -57,10 +57,9 @@ str_num_struct str_to_num(const char* str, size_t str_size, const bool search_wh
             ret_number *= -1;
         }
     }
-
-    return 
+    return
     {
-        (is_negative) ? -ret_number : ret_number,
+        ((is_negative) ? -ret_number : ret_number),
         number_start,
         digit_count
     };

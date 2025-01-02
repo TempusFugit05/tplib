@@ -98,7 +98,7 @@ set(HEADERS_STRING string.h manipulation.h format.h scan.h)
 list(TRANSFORM HEADERS_STRING PREPEND "${DIR_STRING}/")
 
     # Io Headers
-set(HEADERS_IO io.h system_io.h file.h)
+set(HEADERS_IO io.h file.h)
 list(TRANSFORM HEADERS_IO PREPEND "${DIR_IO}/")
 
     # Combine OS-Agnostic Headers
@@ -111,7 +111,7 @@ set(HEADERS_AGNOSTIC)
 set_source_type("include" HEADERS_BASE HEADERS_AGNOSTIC)
 
 # OS-Sepecific Headers
-set(HEADERS_OS system_files.h system_params.h)
+set(HEADERS_OS system_io.h system_files.h system_params.h)
 list(TRANSFORM HEADERS_OS PREPEND "${HEADERS_OS_DIR}/")
 
 # Combining all the headers
