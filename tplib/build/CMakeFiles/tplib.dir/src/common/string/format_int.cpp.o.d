@@ -34,7 +34,7 @@ CMakeFiles/tplib.dir/src/common/string/format_int.cpp.o: \
  /home/tempus/programs/projects/tplib/include/common/string/format.h \
  /home/tempus/programs/projects/tplib/include/common/string/scan.h \
  /home/tempus/programs/projects/tplib/include/common/string/string_utils.h \
- /home/tempus/programs/projects/tplib/include/linux/system_params.h \
+ /home/tempus/programs/projects/tplib/include/system/system_params.h \
  /usr/include/unistd.h /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
  /usr/include/x86_64-linux-gnu/bits/environments.h \
  /usr/include/x86_64-linux-gnu/bits/confname.h \

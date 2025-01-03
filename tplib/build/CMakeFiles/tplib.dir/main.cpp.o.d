@@ -2,7 +2,7 @@ CMakeFiles/tplib.dir/main.cpp.o: \
  /home/tempus/programs/projects/tplib/main.cpp /usr/include/stdc-predef.h \
  /home/tempus/programs/projects/tplib/include/common/io/io.h \
  /home/tempus/programs/projects/tplib/include/common/string/string_utils.h \
- /home/tempus/programs/projects/tplib/include/linux/system_params.h \
+ /home/tempus/programs/projects/tplib/include/system/system_params.h \
  /usr/include/unistd.h /usr/include/features.h \
  /usr/include/features-time64.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
@@ -26,9 +26,10 @@ CMakeFiles/tplib.dir/main.cpp.o: \
  /usr/include/x86_64-linux-gnu/c++/12/bits/os_defines.h \
  /usr/include/x86_64-linux-gnu/c++/12/bits/cpu_defines.h \
  /usr/include/c++/12/pstl/pstl_config.h \
- /home/tempus/programs/projects/tplib/include/linux/system_files.h \
+ /home/tempus/programs/projects/tplib/include/system/system_files.h \
  /home/tempus/programs/projects/tplib/include/common/string/string.h \
  /home/tempus/programs/projects/tplib/include/common/string/manipulation.h \
  /home/tempus/programs/projects/tplib/include/common/string/format.h \
  /usr/lib/gcc/x86_64-linux-gnu/12/include/stdarg.h \
+ /home/tempus/programs/projects/tplib/include/common/string/scan.h \
  /home/tempus/programs/projects/tplib/include/common/string/scan.h

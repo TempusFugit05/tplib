@@ -4,12 +4,10 @@ set(PROJECT_NAME "tplib")
 if (UNIX)
     message(STATUS "Compiling for linux.")
     set(SOURCES_OS_DIR src/linux)
-    set(HEADERS_OS_DIR include/linux)
 endif(UNIX)
 if (WIN32)
     message(STATUS "Compiling for windows.")
     set(SOURCES_OS_DIR src/windows)
-    set(HEADERS_OS_DIR include/windows)
 endif(WIN32)
 
 # This is a utility function to change a list of items from PLACEHOLDER root directory to src or include.
@@ -71,11 +69,9 @@ set(SOURCES_AGNOSTIC
 )
 
 # OS-specific sources
-set(SOURCES_OS
-    system.cpp
-    system_io.cpp
-)
-list(TRANSFORM SOURCES_OS PREPEND "${SOURCES_OS_DIR}/")
+set(SOURCES_OS)
+file(GLOB_RECURSE SOURCES_OS ${SOURCES_OS_DIR}/*.cpp)
+message(STATUS ${SOURCES_OS})
 
 set(SOURCES_BASE
     ${SOURCES_AGNOSTIC}
@@ -111,6 +107,7 @@ set(HEADERS_AGNOSTIC)
 set_source_type("include" HEADERS_BASE HEADERS_AGNOSTIC)
 
 # OS-Sepecific Headers
+set(HEADERS_OS_DIR include/system)
 set(HEADERS_OS system_io.h system_files.h system_params.h)
 list(TRANSFORM HEADERS_OS PREPEND "${HEADERS_OS_DIR}/")
 
@@ -120,14 +117,23 @@ set(HEADERS_DIR ${DIRS_HEADERS_AGNOSTIC} ${HEADERS_OS_DIR})
 
 # Project settings
 project(${PROJECT_NAME})
-add_executable(${PROJECT_NAME} ${SOURCES} main.cpp ${HEADERS})
 
-set (CMAKE_CXX_STANDARD 98)
+option(test "Compile the test for the library" OFF)
+if(test)
+    message(STATUS "Compiling test!")
+    set(MAIN_FILE test/main.cpp)
+else()
+    set(MAIN_FILE main.cpp)
+endif(test)
+
+add_executable(${PROJECT_NAME} ${SOURCES} ${MAIN_FILE} ${HEADERS})
 
 target_include_directories(${PROJECT_NAME} PUBLIC define)
 target_compile_definitions(${PROJECT_NAME} PUBLIC DEV_DEBUG)
 
 target_include_directories(${PROJECT_NAME} PRIVATE ${HEADERS_DIR})
+
+set (CMAKE_CXX_STANDARD 11)
 
 target_compile_options(${PROJECT_NAME} PRIVATE
     -Wall
@@ -135,9 +141,9 @@ target_compile_options(${PROJECT_NAME} PRIVATE
     -Wpedantic
     -fno-exceptions
     -fno-rtti
-    -fsanitize=address
+#    -fsanitize=address
     -g3
 )
 target_link_options(${PROJECT_NAME} PRIVATE
-    -fsanitize=address
+#    -fsanitize=address
 )

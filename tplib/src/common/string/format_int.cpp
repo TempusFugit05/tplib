@@ -180,6 +180,13 @@ int find_char(const char* const str, const size_t str_length, const char to_find
     return -1;
 }
 
+
+size_t str_format(char* const buffer, size_t buffer_size, const char* const format, ...)
+{
+    va_list args;
+    va_start(args, format);
+    str_format(format, buffer, buffer_size, args);
+}
 // Format a string.
 // Returns number of characters formatted in the format buffer.
 size_t str_format(const char* const format, char* const buffer, size_t buffer_size, va_list args)

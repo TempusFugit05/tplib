@@ -1,6 +1,4 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/tplib.dir/main.cpp.o"
-  "CMakeFiles/tplib.dir/main.cpp.o.d"
   "CMakeFiles/tplib.dir/src/common/io/io.cpp.o"
   "CMakeFiles/tplib.dir/src/common/io/io.cpp.o.d"
   "CMakeFiles/tplib.dir/src/common/math.cpp.o"
@@ -13,10 +11,14 @@ file(REMOVE_RECURSE
   "CMakeFiles/tplib.dir/src/common/string/manipulation.cpp.o.d"
   "CMakeFiles/tplib.dir/src/common/string/scan.cpp.o"
   "CMakeFiles/tplib.dir/src/common/string/scan.cpp.o.d"
+  "CMakeFiles/tplib.dir/src/linux/debug.cpp.o"
+  "CMakeFiles/tplib.dir/src/linux/debug.cpp.o.d"
   "CMakeFiles/tplib.dir/src/linux/system.cpp.o"
   "CMakeFiles/tplib.dir/src/linux/system.cpp.o.d"
   "CMakeFiles/tplib.dir/src/linux/system_io.cpp.o"
   "CMakeFiles/tplib.dir/src/linux/system_io.cpp.o.d"
+  "CMakeFiles/tplib.dir/test/main.cpp.o"
+  "CMakeFiles/tplib.dir/test/main.cpp.o.d"
   "tplib"
   "tplib.pdb"
 )

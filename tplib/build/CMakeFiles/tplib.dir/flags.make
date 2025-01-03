@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = -DDEV_DEBUG
 
-CXX_INCLUDES = -I/home/tempus/programs/projects/tplib/define -I/home/tempus/programs/projects/tplib/include/common -I/home/tempus/programs/projects/tplib/include/common/string -I/home/tempus/programs/projects/tplib/include/common/io -I/home/tempus/programs/projects/tplib/include/linux
+CXX_INCLUDES = -I/home/tempus/programs/projects/tplib/define -I/home/tempus/programs/projects/tplib/include/common -I/home/tempus/programs/projects/tplib/include/common/string -I/home/tempus/programs/projects/tplib/include/common/io -I/home/tempus/programs/projects/tplib/include/system
 
-CXX_FLAGS = -Wall -Wextra -Wpedantic -fno-exceptions -fno-rtti -fsanitize=address -g3
+CXX_FLAGS = -Wall -Wextra -Wpedantic -fno-exceptions -fno-rtti -g3
 

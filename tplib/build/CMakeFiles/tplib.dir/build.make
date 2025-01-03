@@ -153,10 +153,24 @@ CMakeFiles/tplib.dir/src/common/string/scan.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tplib.dir/src/common/string/scan.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tempus/programs/projects/tplib/src/common/string/scan.cpp -o CMakeFiles/tplib.dir/src/common/string/scan.cpp.s
 
+CMakeFiles/tplib.dir/src/linux/debug.cpp.o: CMakeFiles/tplib.dir/flags.make
+CMakeFiles/tplib.dir/src/linux/debug.cpp.o: /home/tempus/programs/projects/tplib/src/linux/debug.cpp
+CMakeFiles/tplib.dir/src/linux/debug.cpp.o: CMakeFiles/tplib.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tempus/programs/projects/tplib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/tplib.dir/src/linux/debug.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tplib.dir/src/linux/debug.cpp.o -MF CMakeFiles/tplib.dir/src/linux/debug.cpp.o.d -o CMakeFiles/tplib.dir/src/linux/debug.cpp.o -c /home/tempus/programs/projects/tplib/src/linux/debug.cpp
+
+CMakeFiles/tplib.dir/src/linux/debug.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tplib.dir/src/linux/debug.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tempus/programs/projects/tplib/src/linux/debug.cpp > CMakeFiles/tplib.dir/src/linux/debug.cpp.i
+
+CMakeFiles/tplib.dir/src/linux/debug.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tplib.dir/src/linux/debug.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tempus/programs/projects/tplib/src/linux/debug.cpp -o CMakeFiles/tplib.dir/src/linux/debug.cpp.s
+
 CMakeFiles/tplib.dir/src/linux/system.cpp.o: CMakeFiles/tplib.dir/flags.make
 CMakeFiles/tplib.dir/src/linux/system.cpp.o: /home/tempus/programs/projects/tplib/src/linux/system.cpp
 CMakeFiles/tplib.dir/src/linux/system.cpp.o: CMakeFiles/tplib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tempus/programs/projects/tplib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/tplib.dir/src/linux/system.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tempus/programs/projects/tplib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/tplib.dir/src/linux/system.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tplib.dir/src/linux/system.cpp.o -MF CMakeFiles/tplib.dir/src/linux/system.cpp.o.d -o CMakeFiles/tplib.dir/src/linux/system.cpp.o -c /home/tempus/programs/projects/tplib/src/linux/system.cpp
 
 CMakeFiles/tplib.dir/src/linux/system.cpp.i: cmake_force
@@ -170,7 +184,7 @@ CMakeFiles/tplib.dir/src/linux/system.cpp.s: cmake_force
 CMakeFiles/tplib.dir/src/linux/system_io.cpp.o: CMakeFiles/tplib.dir/flags.make
 CMakeFiles/tplib.dir/src/linux/system_io.cpp.o: /home/tempus/programs/projects/tplib/src/linux/system_io.cpp
 CMakeFiles/tplib.dir/src/linux/system_io.cpp.o: CMakeFiles/tplib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tempus/programs/projects/tplib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/tplib.dir/src/linux/system_io.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tempus/programs/projects/tplib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/tplib.dir/src/linux/system_io.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tplib.dir/src/linux/system_io.cpp.o -MF CMakeFiles/tplib.dir/src/linux/system_io.cpp.o.d -o CMakeFiles/tplib.dir/src/linux/system_io.cpp.o -c /home/tempus/programs/projects/tplib/src/linux/system_io.cpp
 
 CMakeFiles/tplib.dir/src/linux/system_io.cpp.i: cmake_force
@@ -181,19 +195,19 @@ CMakeFiles/tplib.dir/src/linux/system_io.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tplib.dir/src/linux/system_io.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tempus/programs/projects/tplib/src/linux/system_io.cpp -o CMakeFiles/tplib.dir/src/linux/system_io.cpp.s
 
-CMakeFiles/tplib.dir/main.cpp.o: CMakeFiles/tplib.dir/flags.make
-CMakeFiles/tplib.dir/main.cpp.o: /home/tempus/programs/projects/tplib/main.cpp
-CMakeFiles/tplib.dir/main.cpp.o: CMakeFiles/tplib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tempus/programs/projects/tplib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/tplib.dir/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tplib.dir/main.cpp.o -MF CMakeFiles/tplib.dir/main.cpp.o.d -o CMakeFiles/tplib.dir/main.cpp.o -c /home/tempus/programs/projects/tplib/main.cpp
+CMakeFiles/tplib.dir/test/main.cpp.o: CMakeFiles/tplib.dir/flags.make
+CMakeFiles/tplib.dir/test/main.cpp.o: /home/tempus/programs/projects/tplib/test/main.cpp
+CMakeFiles/tplib.dir/test/main.cpp.o: CMakeFiles/tplib.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tempus/programs/projects/tplib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/tplib.dir/test/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tplib.dir/test/main.cpp.o -MF CMakeFiles/tplib.dir/test/main.cpp.o.d -o CMakeFiles/tplib.dir/test/main.cpp.o -c /home/tempus/programs/projects/tplib/test/main.cpp
 
-CMakeFiles/tplib.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tplib.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tempus/programs/projects/tplib/main.cpp > CMakeFiles/tplib.dir/main.cpp.i
+CMakeFiles/tplib.dir/test/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tplib.dir/test/main.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tempus/programs/projects/tplib/test/main.cpp > CMakeFiles/tplib.dir/test/main.cpp.i
 
-CMakeFiles/tplib.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tplib.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tempus/programs/projects/tplib/main.cpp -o CMakeFiles/tplib.dir/main.cpp.s
+CMakeFiles/tplib.dir/test/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tplib.dir/test/main.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tempus/programs/projects/tplib/test/main.cpp -o CMakeFiles/tplib.dir/test/main.cpp.s
 
 # Object files for target tplib
 tplib_OBJECTS = \
@@ -203,9 +217,10 @@ tplib_OBJECTS = \
 "CMakeFiles/tplib.dir/src/common/string/manipulation.cpp.o" \
 "CMakeFiles/tplib.dir/src/common/string/format.cpp.o" \
 "CMakeFiles/tplib.dir/src/common/string/scan.cpp.o" \
+"CMakeFiles/tplib.dir/src/linux/debug.cpp.o" \
 "CMakeFiles/tplib.dir/src/linux/system.cpp.o" \
 "CMakeFiles/tplib.dir/src/linux/system_io.cpp.o" \
-"CMakeFiles/tplib.dir/main.cpp.o"
+"CMakeFiles/tplib.dir/test/main.cpp.o"
 
 # External object files for target tplib
 tplib_EXTERNAL_OBJECTS =
@@ -216,12 +231,13 @@ tplib: CMakeFiles/tplib.dir/src/common/string/format_int.cpp.o
 tplib: CMakeFiles/tplib.dir/src/common/string/manipulation.cpp.o
 tplib: CMakeFiles/tplib.dir/src/common/string/format.cpp.o
 tplib: CMakeFiles/tplib.dir/src/common/string/scan.cpp.o
+tplib: CMakeFiles/tplib.dir/src/linux/debug.cpp.o
 tplib: CMakeFiles/tplib.dir/src/linux/system.cpp.o
 tplib: CMakeFiles/tplib.dir/src/linux/system_io.cpp.o
-tplib: CMakeFiles/tplib.dir/main.cpp.o
+tplib: CMakeFiles/tplib.dir/test/main.cpp.o
 tplib: CMakeFiles/tplib.dir/build.make
 tplib: CMakeFiles/tplib.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/tempus/programs/projects/tplib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable tplib"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/tempus/programs/projects/tplib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable tplib"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/tplib.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

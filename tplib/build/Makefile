@@ -129,30 +129,6 @@ tplib/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tplib.dir/build.make CMakeFiles/tplib.dir/build
 .PHONY : tplib/fast
 
-main.o: main.cpp.o
-.PHONY : main.o
-
-# target to build an object file
-main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tplib.dir/build.make CMakeFiles/tplib.dir/main.cpp.o
-.PHONY : main.cpp.o
-
-main.i: main.cpp.i
-.PHONY : main.i
-
-# target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tplib.dir/build.make CMakeFiles/tplib.dir/main.cpp.i
-.PHONY : main.cpp.i
-
-main.s: main.cpp.s
-.PHONY : main.s
-
-# target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tplib.dir/build.make CMakeFiles/tplib.dir/main.cpp.s
-.PHONY : main.cpp.s
-
 src/common/io/io.o: src/common/io/io.cpp.o
 .PHONY : src/common/io/io.o
 
@@ -297,6 +273,30 @@ src/common/string/scan.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tplib.dir/build.make CMakeFiles/tplib.dir/src/common/string/scan.cpp.s
 .PHONY : src/common/string/scan.cpp.s
 
+src/linux/debug.o: src/linux/debug.cpp.o
+.PHONY : src/linux/debug.o
+
+# target to build an object file
+src/linux/debug.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tplib.dir/build.make CMakeFiles/tplib.dir/src/linux/debug.cpp.o
+.PHONY : src/linux/debug.cpp.o
+
+src/linux/debug.i: src/linux/debug.cpp.i
+.PHONY : src/linux/debug.i
+
+# target to preprocess a source file
+src/linux/debug.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tplib.dir/build.make CMakeFiles/tplib.dir/src/linux/debug.cpp.i
+.PHONY : src/linux/debug.cpp.i
+
+src/linux/debug.s: src/linux/debug.cpp.s
+.PHONY : src/linux/debug.s
+
+# target to generate assembly for a file
+src/linux/debug.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tplib.dir/build.make CMakeFiles/tplib.dir/src/linux/debug.cpp.s
+.PHONY : src/linux/debug.cpp.s
+
 src/linux/system.o: src/linux/system.cpp.o
 .PHONY : src/linux/system.o
 
@@ -345,6 +345,30 @@ src/linux/system_io.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tplib.dir/build.make CMakeFiles/tplib.dir/src/linux/system_io.cpp.s
 .PHONY : src/linux/system_io.cpp.s
 
+test/main.o: test/main.cpp.o
+.PHONY : test/main.o
+
+# target to build an object file
+test/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tplib.dir/build.make CMakeFiles/tplib.dir/test/main.cpp.o
+.PHONY : test/main.cpp.o
+
+test/main.i: test/main.cpp.i
+.PHONY : test/main.i
+
+# target to preprocess a source file
+test/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tplib.dir/build.make CMakeFiles/tplib.dir/test/main.cpp.i
+.PHONY : test/main.cpp.i
+
+test/main.s: test/main.cpp.s
+.PHONY : test/main.s
+
+# target to generate assembly for a file
+test/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tplib.dir/build.make CMakeFiles/tplib.dir/test/main.cpp.s
+.PHONY : test/main.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -354,9 +378,6 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... tplib"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
 	@echo "... src/common/io/io.o"
 	@echo "... src/common/io/io.i"
 	@echo "... src/common/io/io.s"
@@ -375,12 +396,18 @@ help:
 	@echo "... src/common/string/scan.o"
 	@echo "... src/common/string/scan.i"
 	@echo "... src/common/string/scan.s"
+	@echo "... src/linux/debug.o"
+	@echo "... src/linux/debug.i"
+	@echo "... src/linux/debug.s"
 	@echo "... src/linux/system.o"
 	@echo "... src/linux/system.i"
 	@echo "... src/linux/system.s"
 	@echo "... src/linux/system_io.o"
 	@echo "... src/linux/system_io.i"
 	@echo "... src/linux/system_io.s"
+	@echo "... test/main.o"
+	@echo "... test/main.i"
+	@echo "... test/main.s"
 .PHONY : help
 
 

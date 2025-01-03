@@ -19,4 +19,4 @@ CMakeFiles/tplib.dir/src/linux/system_io.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
  /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
  /usr/include/linux/close_range.h \
- /home/tempus/programs/projects/tplib/include/linux/system_io.h
+ /home/tempus/programs/projects/tplib/include/system/system_io.h
