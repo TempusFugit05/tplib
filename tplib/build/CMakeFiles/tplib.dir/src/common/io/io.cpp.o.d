@@ -30,9 +30,11 @@ CMakeFiles/tplib.dir/src/common/io/io.cpp.o: \
  /home/tempus/programs/projects/tplib/include/common/io/io.h \
  /home/tempus/programs/projects/tplib/include/common/string/string_utils.h \
  /home/tempus/programs/projects/tplib/include/system/system_files.h \
- /home/tempus/programs/projects/tplib/include/common/string/string.h \
+ /home/tempus/programs/projects/tplib/include/common/string/tp_string.h \
  /home/tempus/programs/projects/tplib/include/common/string/manipulation.h \
  /home/tempus/programs/projects/tplib/include/common/string/format.h \
+ /home/tempus/programs/projects/tplib/include/common/string/string_utils.h \
+ /home/tempus/programs/projects/tplib/include/common/string/format_utils.h \
  /home/tempus/programs/projects/tplib/include/common/string/scan.h \
  /home/tempus/programs/projects/tplib/include/common/math.h \
  /home/tempus/programs/projects/tplib/define/dev_debug.h \

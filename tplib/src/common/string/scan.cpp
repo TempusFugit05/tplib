@@ -23,21 +23,20 @@ str_num_struct str_to_num(const char* str, size_t str_size, const bool search_wh
     bool number_found = false;
     
     for(size_t i = 0; i < str_size; i++)
-    {
-        bool is_number = is_digit(str[i]);
-        if(!is_number && number_found && !search_whole)
+    { 
+        if(is_digit(str[i]))
+        {
+            if(!number_found)
+            {
+                number_found = true;
+                number_start = i;
+            } // When we found the start of a number.
+            digit_count++;
+        }
+        else if(number_found && !search_whole)
         {
             break;
         } // Stop search if we found and reached the end of a number.
-        else if(is_number && !number_found)
-        {
-            number_found = true;
-            number_start = i;
-        } // When we found the start of a number.
-        if (is_number && number_found)
-        {
-            digit_count++;
-        } // When we are currently reading a number.
     }
     
     if(number_found)
@@ -57,7 +56,7 @@ str_num_struct str_to_num(const char* str, size_t str_size, const bool search_wh
     }
     return
     {
-        ((is_negative) ? -ret_number : ret_number),
+        ret_number,
         number_start,
         digit_count
     };

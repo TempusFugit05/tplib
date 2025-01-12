@@ -34,9 +34,11 @@ CMakeFiles/tplib.dir/src/common/io/io.cpp.o: /home/tempus/programs/projects/tpli
   /home/tempus/programs/projects/tplib/include/common/io/io.h \
   /home/tempus/programs/projects/tplib/include/common/string/string_utils.h \
   /home/tempus/programs/projects/tplib/include/system/system_files.h \
-  /home/tempus/programs/projects/tplib/include/common/string/string.h \
+  /home/tempus/programs/projects/tplib/include/common/string/tp_string.h \
   /home/tempus/programs/projects/tplib/include/common/string/manipulation.h \
   /home/tempus/programs/projects/tplib/include/common/string/format.h \
+  /home/tempus/programs/projects/tplib/include/common/string/string_utils.h \
+  /home/tempus/programs/projects/tplib/include/common/string/format_utils.h \
   /home/tempus/programs/projects/tplib/include/common/string/scan.h \
   /home/tempus/programs/projects/tplib/include/common/math.h \
   /home/tempus/programs/projects/tplib/define/dev_debug.h \
@@ -82,13 +84,6 @@ CMakeFiles/tplib.dir/src/common/string/format.cpp.o: /home/tempus/programs/proje
   /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
   /home/tempus/programs/projects/tplib/include/common/math.h \
   /home/tempus/programs/projects/tplib/include/common/string/format.h \
-  /home/tempus/programs/projects/tplib/include/common/string/string.h \
-  /home/tempus/programs/projects/tplib/include/common/string/manipulation.h \
-  /home/tempus/programs/projects/tplib/include/common/string/format.h \
-  /home/tempus/programs/projects/tplib/include/common/string/scan.h \
-  /home/tempus/programs/projects/tplib/define/dev_debug.h \
-  /home/tempus/programs/projects/tplib/include/common/system.h \
-  /home/tempus/programs/projects/tplib/include/common/io/io.h \
   /home/tempus/programs/projects/tplib/include/common/string/string_utils.h \
   /home/tempus/programs/projects/tplib/include/system/system_params.h \
   /usr/include/unistd.h \
@@ -99,6 +94,16 @@ CMakeFiles/tplib.dir/src/common/string/format.cpp.o: /home/tempus/programs/proje
   /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
   /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
   /usr/include/linux/close_range.h \
+  /home/tempus/programs/projects/tplib/include/common/string/format_utils.h \
+  /home/tempus/programs/projects/tplib/include/common/string/format_utils.h \
+  /home/tempus/programs/projects/tplib/include/common/string/tp_string.h \
+  /home/tempus/programs/projects/tplib/include/common/string/manipulation.h \
+  /home/tempus/programs/projects/tplib/include/common/string/format.h \
+  /home/tempus/programs/projects/tplib/include/common/string/scan.h \
+  /home/tempus/programs/projects/tplib/define/dev_debug.h \
+  /home/tempus/programs/projects/tplib/include/common/system.h \
+  /home/tempus/programs/projects/tplib/include/common/io/io.h \
+  /home/tempus/programs/projects/tplib/include/common/string/string_utils.h \
   /home/tempus/programs/projects/tplib/include/system/system_files.h
 
 CMakeFiles/tplib.dir/src/common/string/format_int.cpp.o: /home/tempus/programs/projects/tplib/src/common/string/format_int.cpp \
@@ -134,10 +139,9 @@ CMakeFiles/tplib.dir/src/common/string/format_int.cpp.o: /home/tempus/programs/p
   /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
   /usr/include/x86_64-linux-gnu/bits/floatn.h \
   /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
-  /home/tempus/programs/projects/tplib/include/common/string/string.h \
+  /home/tempus/programs/projects/tplib/include/common/string/tp_string.h \
   /home/tempus/programs/projects/tplib/include/common/string/manipulation.h \
   /home/tempus/programs/projects/tplib/include/common/string/format.h \
-  /home/tempus/programs/projects/tplib/include/common/string/scan.h \
   /home/tempus/programs/projects/tplib/include/common/string/string_utils.h \
   /home/tempus/programs/projects/tplib/include/system/system_params.h \
   /usr/include/unistd.h \
@@ -148,6 +152,9 @@ CMakeFiles/tplib.dir/src/common/string/format_int.cpp.o: /home/tempus/programs/p
   /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
   /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
   /usr/include/linux/close_range.h \
+  /home/tempus/programs/projects/tplib/include/common/string/format_utils.h \
+  /home/tempus/programs/projects/tplib/include/common/string/scan.h \
+  /home/tempus/programs/projects/tplib/include/common/string/string_utils.h \
   /home/tempus/programs/projects/tplib/include/common/macro_utils.h
 
 CMakeFiles/tplib.dir/src/common/string/manipulation.cpp.o: /home/tempus/programs/projects/tplib/src/common/string/manipulation.cpp \
@@ -167,14 +174,9 @@ CMakeFiles/tplib.dir/src/common/string/manipulation.cpp.o: /home/tempus/programs
   /usr/include/c++/12/pstl/pstl_config.h \
   /usr/lib/gcc/x86_64-linux-gnu/12/include/stddef.h \
   /usr/lib/gcc/x86_64-linux-gnu/12/include/stdarg.h \
-  /home/tempus/programs/projects/tplib/include/common/string/string.h \
+  /home/tempus/programs/projects/tplib/include/common/string/tp_string.h \
   /home/tempus/programs/projects/tplib/include/common/string/manipulation.h \
   /home/tempus/programs/projects/tplib/include/common/string/format.h \
-  /home/tempus/programs/projects/tplib/include/common/string/scan.h \
-  /home/tempus/programs/projects/tplib/include/common/macro_utils.h \
-  /home/tempus/programs/projects/tplib/define/dev_debug.h \
-  /home/tempus/programs/projects/tplib/include/common/system.h \
-  /home/tempus/programs/projects/tplib/include/common/io/io.h \
   /home/tempus/programs/projects/tplib/include/common/string/string_utils.h \
   /home/tempus/programs/projects/tplib/include/system/system_params.h \
   /usr/include/unistd.h \
@@ -188,6 +190,13 @@ CMakeFiles/tplib.dir/src/common/string/manipulation.cpp.o: /home/tempus/programs
   /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
   /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
   /usr/include/linux/close_range.h \
+  /home/tempus/programs/projects/tplib/include/common/string/format_utils.h \
+  /home/tempus/programs/projects/tplib/include/common/string/scan.h \
+  /home/tempus/programs/projects/tplib/include/common/macro_utils.h \
+  /home/tempus/programs/projects/tplib/define/dev_debug.h \
+  /home/tempus/programs/projects/tplib/include/common/system.h \
+  /home/tempus/programs/projects/tplib/include/common/io/io.h \
+  /home/tempus/programs/projects/tplib/include/common/string/string_utils.h \
   /home/tempus/programs/projects/tplib/include/system/system_files.h
 
 CMakeFiles/tplib.dir/src/common/string/scan.cpp.o: /home/tempus/programs/projects/tplib/src/common/string/scan.cpp \
@@ -223,10 +232,12 @@ CMakeFiles/tplib.dir/src/common/string/scan.cpp.o: /home/tempus/programs/project
   /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
   /usr/include/linux/close_range.h \
   /home/tempus/programs/projects/tplib/include/system/system_files.h \
-  /home/tempus/programs/projects/tplib/include/common/string/string.h \
+  /home/tempus/programs/projects/tplib/include/common/string/tp_string.h \
   /home/tempus/programs/projects/tplib/include/common/string/manipulation.h \
   /home/tempus/programs/projects/tplib/include/common/string/format.h \
   /usr/lib/gcc/x86_64-linux-gnu/12/include/stdarg.h \
+  /home/tempus/programs/projects/tplib/include/common/string/string_utils.h \
+  /home/tempus/programs/projects/tplib/include/common/string/format_utils.h \
   /home/tempus/programs/projects/tplib/include/common/string/scan.h \
   /home/tempus/programs/projects/tplib/include/common/math.h \
   /home/tempus/programs/projects/tplib/include/common/string/scan.h
@@ -263,10 +274,12 @@ CMakeFiles/tplib.dir/src/linux/debug.cpp.o: /home/tempus/programs/projects/tplib
   /usr/include/x86_64-linux-gnu/c++/12/bits/cpu_defines.h \
   /usr/include/c++/12/pstl/pstl_config.h \
   /home/tempus/programs/projects/tplib/include/system/system_files.h \
-  /home/tempus/programs/projects/tplib/include/common/string/string.h \
+  /home/tempus/programs/projects/tplib/include/common/string/tp_string.h \
   /home/tempus/programs/projects/tplib/include/common/string/manipulation.h \
   /home/tempus/programs/projects/tplib/include/common/string/format.h \
   /usr/lib/gcc/x86_64-linux-gnu/12/include/stdarg.h \
+  /home/tempus/programs/projects/tplib/include/common/string/string_utils.h \
+  /home/tempus/programs/projects/tplib/include/common/string/format_utils.h \
   /home/tempus/programs/projects/tplib/include/common/string/scan.h
 
 CMakeFiles/tplib.dir/src/linux/system.cpp.o: /home/tempus/programs/projects/tplib/src/linux/system.cpp \
@@ -529,11 +542,8 @@ CMakeFiles/tplib.dir/test/main.cpp.o: /home/tempus/programs/projects/tplib/test/
   /usr/include/c++/12/pstl/execution_defs.h \
   /usr/include/x86_64-linux-gnu/sys/time.h \
   /usr/include/c++/12/cstring \
-  /home/tempus/programs/projects/tplib/include/common/string/string.h \
-  /usr/include/c++/12/cstddef \
-  /home/tempus/programs/projects/tplib/include/common/string/manipulation.h \
-  /home/tempus/programs/projects/tplib/include/common/string/format.h \
-  /home/tempus/programs/projects/tplib/include/common/string/scan.h \
+  /usr/include/string.h \
+  /usr/include/strings.h \
   /home/tempus/programs/projects/tplib/include/common/io/io.h \
   /home/tempus/programs/projects/tplib/include/common/string/string_utils.h \
   /home/tempus/programs/projects/tplib/include/system/system_params.h \
@@ -545,7 +555,14 @@ CMakeFiles/tplib.dir/test/main.cpp.o: /home/tempus/programs/projects/tplib/test/
   /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
   /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
   /usr/include/linux/close_range.h \
+  /usr/include/c++/12/cstddef \
   /home/tempus/programs/projects/tplib/include/system/system_files.h \
+  /home/tempus/programs/projects/tplib/include/common/string/tp_string.h \
+  /home/tempus/programs/projects/tplib/include/common/string/manipulation.h \
+  /home/tempus/programs/projects/tplib/include/common/string/format.h \
+  /home/tempus/programs/projects/tplib/include/common/string/string_utils.h \
+  /home/tempus/programs/projects/tplib/include/common/string/format_utils.h \
+  /home/tempus/programs/projects/tplib/include/common/string/scan.h \
   /home/tempus/programs/projects/tplib/include/common/string/format.h \
   /home/tempus/programs/projects/tplib/include/common/macro_utils.h \
   /home/tempus/programs/projects/tplib/include/common/debug.h \
@@ -564,6 +581,8 @@ CMakeFiles/tplib.dir/test/main.cpp.o: /home/tempus/programs/projects/tplib/test/
 /usr/include/c++/12/bit:
 
 /usr/include/c++/12/bits/stl_vector.h:
+
+/usr/include/string.h:
 
 /usr/include/c++/12/bits/stl_uninitialized.h:
 
@@ -629,10 +648,6 @@ CMakeFiles/tplib.dir/test/main.cpp.o: /home/tempus/programs/projects/tplib/test/
 
 /usr/include/c++/12/tr1/hypergeometric.tcc:
 
-/usr/lib/gcc/x86_64-linux-gnu/12/include/stdint.h:
-
-/usr/include/c++/12/tr1/exp_integral.tcc:
-
 /usr/include/c++/12/tr1/ell_integral.tcc:
 
 /usr/include/c++/12/tr1/beta_function.tcc:
@@ -672,6 +687,12 @@ CMakeFiles/tplib.dir/test/main.cpp.o: /home/tempus/programs/projects/tplib/test/
 /usr/include/x86_64-linux-gnu/asm/errno.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
+
+/usr/include/c++/12/cerrno:
+
+/usr/include/c++/12/bits/refwrap.h:
+
+/usr/include/x86_64-linux-gnu/bits/select.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/wint_t.h:
 
@@ -727,19 +748,17 @@ CMakeFiles/tplib.dir/test/main.cpp.o: /home/tempus/programs/projects/tplib/test/
 
 /home/tempus/programs/projects/tplib/include/common/macro_utils.h:
 
-/usr/include/c++/12/cerrno:
-
-/usr/include/c++/12/bits/refwrap.h:
-
-/usr/include/x86_64-linux-gnu/bits/select.h:
-
 /home/tempus/programs/projects/tplib/include/common/string/format.h:
 
 /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
 
-/home/tempus/programs/projects/tplib/include/common/string/string.h:
+/home/tempus/programs/projects/tplib/include/common/string/tp_string.h:
+
+/usr/include/x86_64-linux-gnu/bits/signum-arch.h:
+
+/usr/include/x86_64-linux-gnu/bits/flt-eval-method.h:
 
 /home/tempus/programs/projects/tplib/define/dev_debug.h:
 
@@ -821,6 +840,14 @@ CMakeFiles/tplib.dir/test/main.cpp.o: /home/tempus/programs/projects/tplib/test/
 
 /home/tempus/programs/projects/tplib/include/common/string/scan.h:
 
+/usr/lib/gcc/x86_64-linux-gnu/12/include/stdint.h:
+
+/usr/include/c++/12/tr1/exp_integral.tcc:
+
+/home/tempus/programs/projects/tplib/include/common/string/format_utils.h:
+
+/usr/include/x86_64-linux-gnu/bits/environments.h:
+
 /home/tempus/programs/projects/tplib/include/common/io/io.h:
 
 /usr/include/x86_64-linux-gnu/c++/12/bits/os_defines.h:
@@ -841,31 +868,29 @@ CMakeFiles/tplib.dir/test/main.cpp.o: /home/tempus/programs/projects/tplib/test/
 
 /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h:
 
+/usr/include/x86_64-linux-gnu/c++/12/bits/c++locale.h:
+
+/usr/include/signal.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/FILE.h:
+
 /usr/include/c++/12/clocale:
 
 /usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/12/include/stdarg.h:
 
-/usr/include/c++/12/bits/move.h:
-
-/usr/include/stdc-predef.h:
-
-/usr/include/x86_64-linux-gnu/bits/environments.h:
-
-/usr/include/x86_64-linux-gnu/c++/12/bits/c++locale.h:
-
-/usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/FILE.h:
-
-/usr/include/signal.h:
-
 /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
+
+/usr/include/x86_64-linux-gnu/sys/select.h:
 
 /usr/include/unistd.h:
 
-/usr/include/x86_64-linux-gnu/sys/select.h:
+/usr/include/c++/12/bits/move.h:
+
+/usr/include/stdc-predef.h:
 
 /usr/include/x86_64-linux-gnu/bits/sigevent-consts.h:
 
@@ -876,10 +901,6 @@ CMakeFiles/tplib.dir/test/main.cpp.o: /home/tempus/programs/projects/tplib/test/
 /usr/include/x86_64-linux-gnu/bits/typesizes.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/sig_atomic_t.h:
-
-/usr/include/x86_64-linux-gnu/bits/signum-arch.h:
-
-/usr/include/x86_64-linux-gnu/bits/flt-eval-method.h:
 
 /usr/include/c++/12/bits/random.h:
 
@@ -940,6 +961,8 @@ CMakeFiles/tplib.dir/test/main.cpp.o: /home/tempus/programs/projects/tplib/test/
 /usr/include/x86_64-linux-gnu/bits/types/struct_sigstack.h:
 
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:
+
+/usr/include/strings.h:
 
 /usr/include/c++/12/string:
 

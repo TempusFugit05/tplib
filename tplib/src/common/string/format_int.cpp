@@ -2,20 +2,14 @@
 #include <stdarg.h>
 #include <cstdio>
 
-#include "string.h"
+#include "tp_string.h"
 #include "string_utils.h"
 #include "macro_utils.h"
-
-#define MODIFIER_CHAR '$'
-#define PAREN_OPEN '{'
-#define PAREN_CLOSE '}'
-
 
 struct int_format_settings
 {
     int base = 10;
     bool capitalized = false;
-    bool big_endian = true;
     
     char seperator = 0;
     int seperate_every = -1;
@@ -45,10 +39,6 @@ size_t format_base(const char* const format, size_t format_size, int_format_sett
         {
             settings->base = new_base;
             format_offset += found_base.num_digits;
-            if(settings->base == 2)
-            {
-                settings->big_endian = false;
-            } // Base 2 is usually written with little endian (opposite of usual).
         } // Assign base if it is valid and move cursor after base number.
         else
         {
@@ -91,7 +81,6 @@ size_t format_seperator(const char* const format, size_t format_size, int_format
     return format_offset;
 
 }
-
 
 size_t format_fill(const char* const format, size_t format_size, int_format_settings* const settings)
 {
@@ -150,7 +139,6 @@ offsets_struct format_int(const char* const format, size_t format_size, char* co
         }
         format_offset += offset;
     }
-    
     size_t num_chars =
         to_str(
         to_format,
@@ -158,102 +146,11 @@ offsets_struct format_int(const char* const format, size_t format_size, char* co
         buffer_size,
         settings.base,
         settings.capitalized,
-        settings.big_endian,
         settings.seperator,
         settings.seperate_every
         );
              
     return {num_chars ,format_offset};
-}
-
-// Return the index of the first occurance of a character in a string.
-// If the character was not found, returns -1.
-int find_char(const char* const str, const size_t str_length, const char to_find)
-{
-    for(size_t i = 0; i < str_length; i++)
-    {
-       if(str[i] == to_find)
-       {
-            return (int)i;
-       }
-    }
-    return -1;
-}
-
-
-size_t str_format(char* const buffer, size_t buffer_size, const char* const format, ...)
-{
-    va_list args;
-    va_start(args, format);
-    str_format(format, buffer, buffer_size, args);
-}
-// Format a string.
-// Returns number of characters formatted in the format buffer.
-size_t str_format(const char* const format, char* const buffer, size_t buffer_size, va_list args)
-{
-    unsigned int buffer_ptr = 0;
-    bool format_next = false;
-    const size_t format_length = str_length(format);
-
-    buffer_size--; // Reserve a byte for null terminator
-    size_t i = 0;
-    
-    for(; i < format_length && buffer_ptr < buffer_size; i++)
-    {
-        if(format_next)
-        {
-            char* const buff_start = buffer + buffer_ptr;
-            const size_t chars_remaining = buffer_size - buffer_ptr;
-            
-            const char* const format_start = format + i + 1;
-            const size_t format_chars_remaining = format_length - i;
-            
-            offsets_struct offset = {0, 0};
-
-            switch(format[i])
-            {
-                case 'i':
-                {
-                    // Write number to buffer and offset the buffer pointer by the number of chars written.
-                    
-                    offset = format_int(format_start, format_chars_remaining, buff_start,
-                                        chars_remaining, va_arg(args, int)); 
-                    break;
-                }
-                case 's':
-                {
-                    // Copy string to buffer abd offset buffer pointer by number of chars written
-                    offset.buffer = str_copy(va_arg(args, char*), buff_start, chars_remaining);
-                    break; 
-                }
-                case 'c':
-                {
-                    // Copy a character to the buffer
-                    buff_start[0] = (char)va_arg(args, int);
-                    offset.buffer = 1;
-                    break;
-                }
-            }
-            
-            buffer_ptr += offset.buffer;
-            i += offset.format;
-            format_next = false;
-        } // Format the values into strings and write them to the buffer.
-        else if(format[i] == MODIFIER_CHAR)
-        { 
-            format_next = true;
-        } // If a modifier char is found, format an argument to a string on next iteration.
-        else
-        {
-            buffer[buffer_ptr] = format[i];
-            buffer_ptr++;
-        } // If no modifiers found, write the current char to the buffer.
-    }
-    if(buffer_size != 0)
-    {
-        buffer[buffer_ptr] = '\0'; // Add null terminator to end of resulting string
-    }
-    return i;
 }
 
 

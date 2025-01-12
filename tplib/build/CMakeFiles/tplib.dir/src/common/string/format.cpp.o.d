@@ -31,13 +31,6 @@ CMakeFiles/tplib.dir/src/common/string/format.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
  /home/tempus/programs/projects/tplib/include/common/math.h \
  /home/tempus/programs/projects/tplib/include/common/string/format.h \
- /home/tempus/programs/projects/tplib/include/common/string/string.h \
- /home/tempus/programs/projects/tplib/include/common/string/manipulation.h \
- /home/tempus/programs/projects/tplib/include/common/string/format.h \
- /home/tempus/programs/projects/tplib/include/common/string/scan.h \
- /home/tempus/programs/projects/tplib/define/dev_debug.h \
- /home/tempus/programs/projects/tplib/include/common/system.h \
- /home/tempus/programs/projects/tplib/include/common/io/io.h \
  /home/tempus/programs/projects/tplib/include/common/string/string_utils.h \
  /home/tempus/programs/projects/tplib/include/system/system_params.h \
  /usr/include/unistd.h /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
@@ -47,4 +40,14 @@ CMakeFiles/tplib.dir/src/common/string/format.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
  /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
  /usr/include/linux/close_range.h \
+ /home/tempus/programs/projects/tplib/include/common/string/format_utils.h \
+ /home/tempus/programs/projects/tplib/include/common/string/format_utils.h \
+ /home/tempus/programs/projects/tplib/include/common/string/tp_string.h \
+ /home/tempus/programs/projects/tplib/include/common/string/manipulation.h \
+ /home/tempus/programs/projects/tplib/include/common/string/format.h \
+ /home/tempus/programs/projects/tplib/include/common/string/scan.h \
+ /home/tempus/programs/projects/tplib/define/dev_debug.h \
+ /home/tempus/programs/projects/tplib/include/common/system.h \
+ /home/tempus/programs/projects/tplib/include/common/io/io.h \
+ /home/tempus/programs/projects/tplib/include/common/string/string_utils.h \
  /home/tempus/programs/projects/tplib/include/system/system_files.h

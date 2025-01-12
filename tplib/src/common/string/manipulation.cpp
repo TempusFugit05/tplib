@@ -1,7 +1,7 @@
 #include <cstddef>
 #include <stdarg.h>
 
-#include "string.h"
+#include "tp_string.h"
 #include "macro_utils.h"
 #include "dev_debug.h"
 

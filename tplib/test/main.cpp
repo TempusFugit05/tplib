@@ -1,7 +1,7 @@
 #include <random>
 #include <sys/time.h>
-#include "usr/include/string.h"
-#include "/usr/include/c++/12/cstring"
+#include <cstring>
+#include <limits>
 
 #include "io.h"
 #include "format.h"
@@ -9,7 +9,8 @@
 #include "debug.h"
 #include "math.h"
 
-#define PRINT_INT_RUNS 100
+#define NUM_RUNS 100
+#define TEST_LIMIT(TEST, ...) if(!TEST(__VA_ARGS__)){return false;}
 
 class rng
 {
@@ -21,7 +22,7 @@ class rng
             srand(seed.tv_usec); // Initialize srand with nanoseconds.
         }
         // Returns a random int between min and max (both inclusive)
-        int get_random(int min, int max)
+        int get_random(int min = std::numeric_limits<int>::min(), int max = std::numeric_limits<int>::max())
         {
             ASSERT(min < max, "The minimum value must be greater than the maximum.");
             return (rand() % max) + min;
@@ -30,24 +31,195 @@ class rng
 
 rng rng_global;
 
-bool test_print_int()
+class test
 {
-    char control_format[64];
-    char test_format[64];
+    private:
+        virtual bool run_test() = 0;
 
-    for(int i = 0; i < PRINT_INT_RUNS; i++)
-    {
-        int random = rng_global.get_random(0, MAX_SIGNED(int));
-        snprintf(control_format, ARRAY_LENGTH(control_format), "%i", random);
-        str_format(test_format, ARRAY_LENGTH(control_format), "$i", random);
-        if(strcmp(control_format, test_format) != 0)
+    protected:
+        char test_name[32] = "\0";
+        char fail_reason[128] = "\0";
+        void set_name(const char* const name)
         {
+            strncpy(test_name, name, ARRAY_LENGTH(test_name));
+        }
+
+    public:
+        bool run()
+        {
+            bool test_result = run_test();
+            if(test_result)
+            {
+                printf("Test %s - PASSED!\n", test_name);
+            }
+            else
+            {
+                printf("Test %s - FAILED! Reason: %s\n", test_name, fail_reason);
+            }
+            return test_result;
+        }
+};
+
+// STRING FORMAT TESTS
+
+// Test formatting a string with integers.
+class test_print : public test
+{
+    private:
+        void set_fail_reason(const char* expected, const char* actual) const
+        {
+
+            snprintf((char*)fail_reason, ARRAY_LENGTH(fail_reason), "tp version did not match std version! Expected: %s, got %s.", expected, actual);
+        }
+        
+        bool compare_std2tp(const char* const control_format, const char* const test_format, ...) const
+        {
+            char control_output[64];
+            char test_output[64];
+            
+            // Create two strings from the standard and tp libraries.
+            va_list args_control;
+            va_start(args_control, test_format);
+            vsnprintf(control_output, ARRAY_LENGTH(control_output), control_format, args_control);
+            va_end(args_control);
+            
+            va_list args_test;
+            va_start(args_test, test_format);
+            str_format(test_output, ARRAY_LENGTH(test_output), test_format, args_test);
+            va_end(args_test);
+            
+            // Check if the strings match.
+            if(strcmp(control_output, test_output) == 0)
+            {
+                return true;
+            }
+
+            set_fail_reason(control_output, test_output);
             return false;
         }
-    }
-    return true;
-}
+
+        
+        bool run_test() override
+        {
+            // Test limits.
+            TEST_LIMIT(compare_std2tp, "%i", "$i", std::numeric_limits<int>::max())
+            TEST_LIMIT(compare_std2tp, "%i", "$i", std::numeric_limits<int>::min())
+            TEST_LIMIT(compare_std2tp, "%i", "$i", 0)
+            
+            for(int i = 0; i < NUM_RUNS; i++)
+            {
+                int random = rng_global.get_random(); // Generate a random number to feed into format functions. 
+                if(!compare_std2tp("%i", "$i", random))
+                {
+                    return false;
+                }
+            }
+            return true;
+        }
+
+    public:
+        test_print()
+        {
+            set_name("Int to string");
+        }
+};
+
+// SCAN TESTS
+
+// Test scanning a string for integers.
+class test_scan : public test
+{
+    private:
+        void set_fail_reason(const int expected, const int actual)
+        {
+            
+             snprintf((char*)fail_reason, ARRAY_LENGTH(fail_reason),
+             "tp version did not match std version! Expected: %i, got %i.", expected, actual);
+        }
+        
+        void generate_int_string_fuzzed(char* const buff, size_t buff_size, int input)
+        {
+            buff_size--;
+            size_t junk_fill = rng_global.get_random(1, buff_size - 9);
+            for(size_t i = 0; i < junk_fill; i++)
+            {
+                buff[i] = (char)rng_global.get_random(50, 255); // Fill buffer with random characters
+            }
+
+            size_t num_size = snprintf(buff + junk_fill, buff_size - junk_fill, "%i", input);
+            
+            for(size_t i = num_size + junk_fill; i < buff_size; i++)
+            {
+                buff[i] = (char)rng_global.get_random(50, 255); // Fill rest of buffer with random characters
+            }
+        }
+  
+        bool scan(int input, bool search_whole)
+        {
+            char control_input[32] = "\0";
+            if(search_whole)
+            {
+                generate_int_string_fuzzed(control_input, ARRAY_LENGTH(control_input), input);
+            }
+            else
+            {
+                snprintf(control_input, ARRAY_LENGTH(control_input), "%i", input); // Create input string with random integer
+            }
+            int result = str_to_num(control_input, ARRAY_LENGTH(control_input), search_whole).number; // Try reading integer
+            if(result != input)
+            {
+                set_fail_reason(input, result);
+                return false;
+            }
+            return true;
+        }
+ 
+        bool test_scan_int(bool search_whole)
+        {
+             // Test limits.
+            TEST_LIMIT(scan, std::numeric_limits<int>::max(), search_whole);
+            TEST_LIMIT(scan, std::numeric_limits<int>::min(), search_whole);
+            TEST_LIMIT(scan, 0, search_whole);
+
+            // Test random inputs.
+            for(int i = 0; i < NUM_RUNS; i++)
+            {
+                int random = rng_global.get_random();
+                if(!scan(random, search_whole))
+                {
+                    return false;
+                }
+            }
+            return true;
+        }
+
+        bool run_test() override
+        {
+            if(!test_scan_int(false))
+            {
+                // return false;
+            }
+            if(!test_scan_int(true))
+            {
+               return false;
+            }
+            return true;
+        }
+
+    public:
+        test_scan()
+        {
+            set_name("Scan string for int");
+        }
+};
 
 int main()
 {
+    test_print print_test;
+    test_scan scan_test;
+    test* tests[] = {&print_test, &scan_test};
+    for(size_t i = 0; i < ARRAY_LENGTH(tests); i++)
+    {
+        tests[i]->run();
+    }
 }

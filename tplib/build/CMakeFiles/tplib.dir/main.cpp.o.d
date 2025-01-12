@@ -27,9 +27,11 @@ CMakeFiles/tplib.dir/main.cpp.o: \
  /usr/include/x86_64-linux-gnu/c++/12/bits/cpu_defines.h \
  /usr/include/c++/12/pstl/pstl_config.h \
  /home/tempus/programs/projects/tplib/include/system/system_files.h \
- /home/tempus/programs/projects/tplib/include/common/string/string.h \
+ /home/tempus/programs/projects/tplib/include/common/string/tp_string.h \
  /home/tempus/programs/projects/tplib/include/common/string/manipulation.h \
  /home/tempus/programs/projects/tplib/include/common/string/format.h \
  /usr/lib/gcc/x86_64-linux-gnu/12/include/stdarg.h \
+ /home/tempus/programs/projects/tplib/include/common/string/string_utils.h \
+ /home/tempus/programs/projects/tplib/include/common/string/format_utils.h \
  /home/tempus/programs/projects/tplib/include/common/string/scan.h \
  /home/tempus/programs/projects/tplib/include/common/string/scan.h

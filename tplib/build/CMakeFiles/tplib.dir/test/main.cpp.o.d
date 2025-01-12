@@ -147,11 +147,7 @@ CMakeFiles/tplib.dir/test/main.cpp.o: \
  /usr/include/c++/12/pstl/glue_numeric_defs.h \
  /usr/include/c++/12/pstl/execution_defs.h \
  /usr/include/x86_64-linux-gnu/sys/time.h /usr/include/c++/12/cstring \
- /home/tempus/programs/projects/tplib/include/common/string/string.h \
- /usr/include/c++/12/cstddef \
- /home/tempus/programs/projects/tplib/include/common/string/manipulation.h \
- /home/tempus/programs/projects/tplib/include/common/string/format.h \
- /home/tempus/programs/projects/tplib/include/common/string/scan.h \
+ /usr/include/string.h /usr/include/strings.h \
  /home/tempus/programs/projects/tplib/include/common/io/io.h \
  /home/tempus/programs/projects/tplib/include/common/string/string_utils.h \
  /home/tempus/programs/projects/tplib/include/system/system_params.h \
@@ -161,8 +157,14 @@ CMakeFiles/tplib.dir/test/main.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
  /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
  /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
- /usr/include/linux/close_range.h \
+ /usr/include/linux/close_range.h /usr/include/c++/12/cstddef \
  /home/tempus/programs/projects/tplib/include/system/system_files.h \
+ /home/tempus/programs/projects/tplib/include/common/string/tp_string.h \
+ /home/tempus/programs/projects/tplib/include/common/string/manipulation.h \
+ /home/tempus/programs/projects/tplib/include/common/string/format.h \
+ /home/tempus/programs/projects/tplib/include/common/string/string_utils.h \
+ /home/tempus/programs/projects/tplib/include/common/string/format_utils.h \
+ /home/tempus/programs/projects/tplib/include/common/string/scan.h \
  /home/tempus/programs/projects/tplib/include/common/string/format.h \
  /home/tempus/programs/projects/tplib/include/common/macro_utils.h \
  /home/tempus/programs/projects/tplib/include/common/debug.h \

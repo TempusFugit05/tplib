@@ -71,7 +71,6 @@ set(SOURCES_AGNOSTIC
 # OS-specific sources
 set(SOURCES_OS)
 file(GLOB_RECURSE SOURCES_OS ${SOURCES_OS_DIR}/*.cpp)
-message(STATUS ${SOURCES_OS})
 
 set(SOURCES_BASE
     ${SOURCES_AGNOSTIC}
@@ -90,7 +89,7 @@ set(HEADERS_COMMON
 list(TRANSFORM HEADERS_COMMON PREPEND "${DIR_COMMON}/")
 
     # String Headers
-set(HEADERS_STRING string.h manipulation.h format.h scan.h)
+set(HEADERS_STRING tp_string.h manipulation.h format.h scan.h)
 list(TRANSFORM HEADERS_STRING PREPEND "${DIR_STRING}/")
 
     # Io Headers
@@ -141,9 +140,9 @@ target_compile_options(${PROJECT_NAME} PRIVATE
     -Wpedantic
     -fno-exceptions
     -fno-rtti
-#    -fsanitize=address
+    -fsanitize=address
     -g3
 )
 target_link_options(${PROJECT_NAME} PRIVATE
-#    -fsanitize=address
+    -fsanitize=address
 )

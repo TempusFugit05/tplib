@@ -14,14 +14,9 @@ CMakeFiles/tplib.dir/src/common/string/manipulation.cpp.o: \
  /usr/include/c++/12/pstl/pstl_config.h \
  /usr/lib/gcc/x86_64-linux-gnu/12/include/stddef.h \
  /usr/lib/gcc/x86_64-linux-gnu/12/include/stdarg.h \
- /home/tempus/programs/projects/tplib/include/common/string/string.h \
+ /home/tempus/programs/projects/tplib/include/common/string/tp_string.h \
  /home/tempus/programs/projects/tplib/include/common/string/manipulation.h \
  /home/tempus/programs/projects/tplib/include/common/string/format.h \
- /home/tempus/programs/projects/tplib/include/common/string/scan.h \
- /home/tempus/programs/projects/tplib/include/common/macro_utils.h \
- /home/tempus/programs/projects/tplib/define/dev_debug.h \
- /home/tempus/programs/projects/tplib/include/common/system.h \
- /home/tempus/programs/projects/tplib/include/common/io/io.h \
  /home/tempus/programs/projects/tplib/include/common/string/string_utils.h \
  /home/tempus/programs/projects/tplib/include/system/system_params.h \
  /usr/include/unistd.h /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
@@ -34,4 +29,11 @@ CMakeFiles/tplib.dir/src/common/string/manipulation.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
  /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
  /usr/include/linux/close_range.h \
+ /home/tempus/programs/projects/tplib/include/common/string/format_utils.h \
+ /home/tempus/programs/projects/tplib/include/common/string/scan.h \
+ /home/tempus/programs/projects/tplib/include/common/macro_utils.h \
+ /home/tempus/programs/projects/tplib/define/dev_debug.h \
+ /home/tempus/programs/projects/tplib/include/common/system.h \
+ /home/tempus/programs/projects/tplib/include/common/io/io.h \
+ /home/tempus/programs/projects/tplib/include/common/string/string_utils.h \
  /home/tempus/programs/projects/tplib/include/system/system_files.h

@@ -31,7 +31,7 @@ void str_print_formatted(const char* const format, ...)
     va_start(args, format);
     while(chars_formatted < format_size)
     {
-        chars_formatted += str_format(format + chars_formatted, buffer, ARRAY_LENGTH(buffer), args);
+        chars_formatted += str_format(buffer, ARRAY_LENGTH(buffer), format + chars_formatted, args);
         str_write(buffer, ARRAY_LENGTH(buffer), FILE_STDOUT);
     }
     va_end(args);
