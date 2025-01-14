@@ -1,3 +1,4 @@
+#include "io.h"
 #include "math.h"
 
 // Returns the absolute value of a number.
@@ -16,16 +17,6 @@ int absolute(int value)
     value = (unsigned int)value << 1;
     value = (unsigned int)value >> 1;
     return value;
-}
-
-int power(int base, int power)
-{
-    int result = 1;
-    for(int i = 0; i < power; i++)
-    {
-        result *= base;
-    }
-    return result;
 }
 
 // Reverse a number (ie 123 -> 321).

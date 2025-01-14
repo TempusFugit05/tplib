@@ -37,6 +37,7 @@ size_t str_copy(const char* const to_copy, const size_t to_copy_size, char* cons
 bool is_digit(const char character, unsigned int base, bool capitalized)
 {
     DEV_ASSERT(base <= BASE_MAX, "is_digit: base must be >=2 and <= BASE_MAX");
+    
     for(size_t i = 0; i < base; i++)
     {
         if(character == ((capitalized) ? capital_digits[i] : lower_digits[i]))

@@ -9,7 +9,7 @@
 #include "debug.h"
 #include "math.h"
 
-#define NUM_RUNS 100
+#define NUM_RUNS 10000
 #define TEST_LIMIT(TEST, ...) if(!TEST(__VA_ARGS__)){return false;}
 
 class rng
@@ -25,7 +25,7 @@ class rng
         int get_random(int min = std::numeric_limits<int>::min(), int max = std::numeric_limits<int>::max())
         {
             ASSERT(min < max, "The minimum value must be greater than the maximum.");
-            return (rand() % max) + min;
+            return (rand() + min) % max;
         }
 };
 
@@ -136,22 +136,21 @@ class test_scan : public test
              snprintf((char*)fail_reason, ARRAY_LENGTH(fail_reason),
              "tp version did not match std version! Expected: %i, got %i.", expected, actual);
         }
-        
+       
+       // Create a random set of characters containing a number.
         void generate_int_string_fuzzed(char* const buff, size_t buff_size, int input)
         {
-            buff_size--;
-            size_t junk_fill = rng_global.get_random(1, buff_size - 9);
-            for(size_t i = 0; i < junk_fill; i++)
+            char num_str[16];
+            size_t num_str_size = snprintf(num_str, ARRAY_LENGTH(num_str), "%i", input);
+            for(size_t i = 0; i < buff_size; i++)
             {
-                buff[i] = (char)rng_global.get_random(50, 255); // Fill buffer with random characters
+                buff[i] = 'z';
             }
-
-            size_t num_size = snprintf(buff + junk_fill, buff_size - junk_fill, "%i", input);
-            
-            for(size_t i = num_size + junk_fill; i < buff_size; i++)
-            {
-                buff[i] = (char)rng_global.get_random(50, 255); // Fill rest of buffer with random characters
-            }
+            size_t num_str_offset = rng_global.get_random(0, buff_size - num_str_size); 
+            strcpy(buff + num_str_offset, num_str);
+            buff[num_str_offset + num_str_size] = 'z';
+            buff[buff_size - 1] = '\0';
+            printf("%s\n",buff);
         }
   
         bool scan(int input, bool search_whole)
@@ -197,7 +196,7 @@ class test_scan : public test
         {
             if(!test_scan_int(false))
             {
-                // return false;
+                return false;
             }
             if(!test_scan_int(true))
             {
