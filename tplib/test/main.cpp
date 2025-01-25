@@ -8,8 +8,21 @@
 #include "macro_utils.h"
 #include "debug.h"
 #include "math.h"
+#include "macro_helpers.h"
 
-#define NUM_RUNS 10000
+#define ANSI_CYAN "\x1B[36m"
+#define ANSI_RESET "\x1B[0m"
+
+#define PASS " - " ANSI_CYAN "PASS" ANSI_RESET
+#define MESSAGE(INDENT, TEXT, ...) for(int i = 0; i < INDENT; i++){printf("...");} printf(TEXT "\n", __VA_ARGS__)
+#define MESSAGE_NO_VA(INDENT, TEXT) for(int i = 0; i < INDENT; i++){printf("...");} printf(TEXT "\n")
+#define TEST_STATUS2(STATUS, TEXT, ...) MESSAGE_NO_VA(1, TEXT STATUS)
+#define TEST_STATUS3(STATUS, TEXT, ...) MESSAGE(1, TEXT STATUS, __VA_ARGS__)
+#define TEST_STATUS4(STATUS, TEXT, ...) MESSAGE(1, TEXT STATUS, __VA_ARGS__)
+#define TEST_STATUS5(STATUS, TEXT, ...) MESSAGE(1, TEXT STATUS, __VA_ARGS__)
+#define TEST_STATUS(...) CONCATENATE(TEST_STATUS, COUNT_ARGS(__VA_ARGS__))(__VA_ARGS__)
+
+#define NUM_RUNS 100
 #define TEST_LIMIT(TEST, ...) if(!TEST(__VA_ARGS__)){return false;}
 
 class rng
@@ -47,15 +60,17 @@ class test
     public:
         bool run()
         {
+            printf("Testing: %s\n", test_name);
             bool test_result = run_test();
             if(test_result)
             {
-                printf("Test %s - PASSED!\n", test_name);
+                TEST_STATUS(PASS, "Test %s!", test_name);
             }
             else
             {
-                printf("Test %s - FAILED! Reason: %s\n", test_name, fail_reason);
+                TEST_STATUS(PASS, "Test %s - FAILED! Reason: %s", test_name, fail_reason);
             }
+            printf("\n");
             return test_result;
         }
 };
@@ -150,7 +165,6 @@ class test_scan : public test
             strcpy(buff + num_str_offset, num_str);
             buff[num_str_offset + num_str_size] = 'z';
             buff[buff_size - 1] = '\0';
-            printf("%s\n",buff);
         }
   
         bool scan(int input, bool search_whole)
@@ -198,9 +212,17 @@ class test_scan : public test
             {
                 return false;
             }
+            else
+            {
+                TEST_STATUS(PASS, "Regular scan");
+            }
             if(!test_scan_int(true))
             {
                return false;
+            }
+            else
+            {
+                TEST_STATUS(PASS, "Fuzzed scan");
             }
             return true;
         }

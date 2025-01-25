@@ -85,6 +85,7 @@ set(HEADERS_COMMON
     system.h
     math.h
     macro_utils.h
+    macro_helpers.h
 )
 list(TRANSFORM HEADERS_COMMON PREPEND "${DIR_COMMON}/")
 

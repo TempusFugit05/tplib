@@ -616,8 +616,11 @@ CMakeFiles/tplib.dir/test/main.cpp.o: /home/tempus/programs/projects/tplib/test/
   /home/tempus/programs/projects/tplib/include/common/macro_utils.h \
   /home/tempus/programs/projects/tplib/include/common/debug.h \
   /home/tempus/programs/projects/tplib/include/common/system.h \
-  /home/tempus/programs/projects/tplib/include/common/math.h
+  /home/tempus/programs/projects/tplib/include/common/math.h \
+  /home/tempus/programs/projects/tplib/include/common/macro_helpers.h
 
+
+/home/tempus/programs/projects/tplib/include/common/macro_helpers.h:
 
 /home/tempus/programs/projects/tplib/include/common/debug.h:
 
