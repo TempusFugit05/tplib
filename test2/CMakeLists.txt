@@ -1,6 +1,0 @@
-cmake_minimum_required(VERSION 3.25)
-set(PROJECT_NAME "test2")
-project(${PROJECT_NAME})
-add_subdirectory(../tplib ../tplib/build)
-add_executable(${PROJECT_NAME} main.cpp)
-target_link_libraries(${PROJECT_NAME} tplib)

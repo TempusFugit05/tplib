@@ -1,3 +1,0 @@
-/home/tempus/programs/projects/test/build/CMakeFiles/test.dir
-/home/tempus/programs/projects/test/build/CMakeFiles/edit_cache.dir
-/home/tempus/programs/projects/test/build/CMakeFiles/rebuild_cache.dir

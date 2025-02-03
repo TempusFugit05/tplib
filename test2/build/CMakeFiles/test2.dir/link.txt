@@ -1,1 +1,0 @@
-/usr/bin/c++ CMakeFiles/test2.dir/main.cpp.o -o test2  /home/tempus/programs/projects/test2/tplib/build/libtplib.a 
