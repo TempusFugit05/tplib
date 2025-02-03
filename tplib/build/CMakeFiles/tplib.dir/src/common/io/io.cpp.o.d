@@ -13,7 +13,6 @@ CMakeFiles/tplib.dir/src/common/io/io.cpp.o: \
  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
  /usr/include/x86_64-linux-gnu/c++/12/bits/cpu_defines.h \
- /usr/include/c++/12/pstl/pstl_config.h \
  /usr/lib/gcc/x86_64-linux-gnu/12/include/stddef.h \
  /home/tempus/programs/projects/tplib/include/system/system_params.h \
  /usr/include/unistd.h /usr/include/x86_64-linux-gnu/bits/posix_opt.h \

@@ -1,6 +1,37 @@
+include(GenerateExportHeader)
+
+# Basic stuff
 cmake_minimum_required(VERSION 3.25)
 set(PROJECT_NAME "tplib")
+set (CMAKE_CXX_STANDARD 11)
 
+project(
+    ${PROJECT_NAME}
+    VERSION 1.0.0
+    DESCRIPTION
+        "This is the base library for my projects :)"
+    LANGUAGES CXX
+)
+
+# Settings for generating test/library.
+option(test "Compile test for the library." OFF)
+
+if(NOT test)
+    add_library(${PROJECT_NAME})
+    generate_export_header(
+    ${PROJECT_NAME}
+    EXPORT_FILE_NAME
+    export/${PROJECT_NAME}.hpp
+    )
+
+    target_include_directories(
+        ${PROJECT_NAME}
+        PUBLIC
+        ${CMAKE_CURRENT_BINARY_DIR}/export
+    )
+endif(NOT test)
+
+# Setup for OS specific configurations
 if (UNIX)
     message(STATUS "Compiling for linux.")
     set(SOURCES_OS_DIR src/linux)
@@ -115,25 +146,21 @@ list(TRANSFORM HEADERS_OS PREPEND "${HEADERS_OS_DIR}/")
 set(HEADERS ${HEADERS_AGNOSTIC} ${HEADERS_OS})
 set(HEADERS_DIR ${DIRS_HEADERS_AGNOSTIC} ${HEADERS_OS_DIR})
 
-# Project settings
-project(${PROJECT_NAME})
-
-option(test "Compile the test for the library" OFF)
 if(test)
     message(STATUS "Compiling test!")
-    set(MAIN_FILE test/main.cpp)
-else()
-    set(MAIN_FILE main.cpp)
+    add_executable(${PROJECT_NAME} ${SOURCES} test/main.cpp ${HEADERS})
 endif(test)
 
-add_executable(${PROJECT_NAME} ${SOURCES} ${MAIN_FILE} ${HEADERS})
+target_sources(${PROJECT_NAME} PRIVATE ${SOURCES})
+
+target_compile_definitions(${PROJECT_NAME} PRIVATE DEV_DEBUG)
 
 target_include_directories(${PROJECT_NAME} PUBLIC define)
-target_compile_definitions(${PROJECT_NAME} PUBLIC DEV_DEBUG)
+target_include_directories(${PROJECT_NAME} PUBLIC ${HEADERS_DIR})
 
-target_include_directories(${PROJECT_NAME} PRIVATE ${HEADERS_DIR})
-
-set (CMAKE_CXX_STANDARD 11)
+target_compile_options(${PROJECT_NAME} PRIVATE 
+    -fvisibility-inlines-hidden
+)
 
 target_compile_options(${PROJECT_NAME} PRIVATE
     -Wall
@@ -141,9 +168,9 @@ target_compile_options(${PROJECT_NAME} PRIVATE
     -Wpedantic
     -fno-exceptions
     -fno-rtti
-    -fsanitize=address
+    # -fsanitize=address
     -g3
 )
 target_link_options(${PROJECT_NAME} PRIVATE
-    -fsanitize=address
+    # -fsanitize=address
 )
