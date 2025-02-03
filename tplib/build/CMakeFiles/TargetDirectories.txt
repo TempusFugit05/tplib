@@ -1,3 +1,0 @@
-/home/tempus/programs/projects/tplib/build/CMakeFiles/tplib.dir
-/home/tempus/programs/projects/tplib/build/CMakeFiles/edit_cache.dir
-/home/tempus/programs/projects/tplib/build/CMakeFiles/rebuild_cache.dir
