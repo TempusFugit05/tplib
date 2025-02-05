@@ -12,13 +12,13 @@
 
 void str_write(const char* const string, int file)
 {
-    write_char_buffer(string, str_length(string), file);
+    file_write(string, str_length(string), file);
 }
 
 void str_write(const char* const string, const size_t string_length, const int file)
 {
     size_t size_to_terminator = str_length(string);
-    write_char_buffer(string, ((string_length > size_to_terminator) ? size_to_terminator : string_length), file);
+    file_write(string, ((string_length > size_to_terminator) ? size_to_terminator : string_length), file);
 }
 
 // Print a formatted string to stdout
