@@ -14,9 +14,9 @@ project(
 )
 
 # Settings for generating test/library.
-option(test "Compile test for the library." OFF)
+# option(test "Compile test for the library." OFF)
 
-if(NOT test)
+# if(NOT test)
     add_library(${PROJECT_NAME})
     generate_export_header(
     ${PROJECT_NAME}
@@ -29,7 +29,7 @@ if(NOT test)
         PUBLIC
         ${CMAKE_CURRENT_BINARY_DIR}/export
     )
-endif(NOT test)
+# endif(NOT test)
 
 # Setup for OS specific configurations
 if (UNIX)
@@ -146,10 +146,10 @@ list(TRANSFORM HEADERS_OS PREPEND "${HEADERS_OS_DIR}/")
 set(HEADERS ${HEADERS_AGNOSTIC} ${HEADERS_OS})
 set(HEADERS_DIR ${DIRS_HEADERS_AGNOSTIC} ${HEADERS_OS_DIR})
 
-if(test)
-    message(STATUS "Compiling test!")
-    add_executable(${PROJECT_NAME} ${SOURCES} test/main.cpp ${HEADERS})
-endif(test)
+# if(test)
+#     message(STATUS "Compiling test!")
+#     add_executable(${PROJECT_NAME} ${SOURCES} test/main.cpp ${HEADERS})
+# endif(test)
 
 target_sources(${PROJECT_NAME} PRIVATE ${SOURCES})
 
