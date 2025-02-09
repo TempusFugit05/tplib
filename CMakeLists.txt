@@ -79,6 +79,7 @@ list(TRANSFORM SOURCES_COMMON PREPEND "${DIR_COMMON}/")
 
     # IO sources
 set(SOURCES_IO
+    console_io.cpp
     io.cpp
 )
 list(TRANSFORM SOURCES_IO PREPEND "${DIR_IO}/")

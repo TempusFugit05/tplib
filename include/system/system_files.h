@@ -3,7 +3,9 @@
 
 typedef int file;
 
-#define FILE_STDOUT 1
-#define FILE_STDERR 2
+const file FILE_STDIN = 0;
+const file FILE_STDOUT = 1;
+const file FILE_STDERR = 2;
+
 
 #endif // SYSTEM_FILES_H

@@ -4,6 +4,7 @@
 #include "string_utils.h"
 #include "system_files.h"
 #include "tp_string.h"
+#include "console_io.h"
 
 void str_write(const char* const string, const size_t string_size, const int file);
 void str_write(const char* const string, const int file);
