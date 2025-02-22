@@ -19,14 +19,25 @@ int char_to_digit(const char character, bool capitalized)
     return 0;
 }
 
-// Copy a string to a buffer
-// Returns number of characters copied
+// Copy a string to a buffer including terminator.
+// Returns number of characters copied, not including terminator.
 size_t str_copy(const char* const to_copy, const size_t to_copy_size, char* const copy_to, const size_t copy_to_size)
 {
-    size_t chars_to_copy = str_length(to_copy);
-    chars_to_copy = (to_copy_size > chars_to_copy) ? chars_to_copy : to_copy_size;
     size_t i = 0;
-    for(; i < chars_to_copy && i < copy_to_size && to_copy[i] != '\0'; i++)
+    for(; i < copy_to_size  && i < to_copy_size && to_copy[i] != '\0'; i++)
+    {
+        copy_to[i] = to_copy[i];
+    }
+    return i; // Return number of chars written
+}
+
+// Copy a string to a buffer including terminator.
+// Returns number of characters copied, not including terminator.
+size_t str_copy(const char* const to_copy, char* const copy_to, size_t copy_to_size)
+{
+    size_t to_copy_size = str_length(to_copy);
+    size_t i = 0;
+    for(; i < to_copy_size && i < copy_to_size && to_copy[i] != '\0'; i++)
     {
         copy_to[i] = to_copy[i];
     }
@@ -58,19 +69,6 @@ size_t str_length(const char* const string)
         string_size++;
     }
     return string_size;
-}
-
-// Copy a string to a buffer
-// Returns number of characters copied
-size_t str_copy(const char* const to_copy, char* const copy_to, size_t copy_to_size)
-{
-    size_t to_copy_size = str_length(to_copy);
-    size_t i = 0;
-    for(; i < to_copy_size && i < copy_to_size && to_copy[i] != '\0'; i++)
-    {
-        copy_to[i] = to_copy[i];
-    }
-    return i; // Return number of chars written
 }
 
 void str_reverse(char* const str, const size_t str_size)

@@ -1,7 +1,9 @@
-#ifndef STRING_H
-#define STRING_H
-#include <cstddef>
+#ifndef TP_STRING_H
+#define TP_STRING_H
+
 #include "manipulation.h"
 #include "format.h"
 #include "scan.h"
-#endif //STRING_H
+#include "string_types.h"
+
+#endif //TP_STRING_H

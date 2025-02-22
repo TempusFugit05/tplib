@@ -122,11 +122,21 @@ set(HEADERS_COMMON
 list(TRANSFORM HEADERS_COMMON PREPEND "${DIR_COMMON}/")
 
     # String Headers
-set(HEADERS_STRING tp_string.h manipulation.h format.h scan.h)
+set(HEADERS_STRING
+    tp_string.h
+    manipulation.h
+    format.h
+    scan.h
+)
+
 list(TRANSFORM HEADERS_STRING PREPEND "${DIR_STRING}/")
 
     # Io Headers
-set(HEADERS_IO io.h file.h)
+set(HEADERS_IO 
+    io.h
+    file.h
+)
+
 list(TRANSFORM HEADERS_IO PREPEND "${DIR_IO}/")
 
     # Combine OS-Agnostic Headers
