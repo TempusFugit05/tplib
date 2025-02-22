@@ -40,7 +40,7 @@ size_t to_str(int integer, char* const buffer, const size_t buffer_size, const i
     }
     
     // Calculate digits of the number and set string characters.
-    for(; ((integer < 0) ? number < 0 : number > 0) && num_chars <= buffer_size - offset; num_chars++)
+    for(; ((integer < 0) ? number < 0 : number > 0) && num_chars < buffer_size - offset; num_chars++)
     {
         if(num_digits % seperate_every == 0 && num_digits != 0 && !seperator_added)
         {   

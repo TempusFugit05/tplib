@@ -1,7 +1,7 @@
 #ifndef STRING_TYPES_H
 #define STRING_TYPES_H
 #include <cstddef>
-
+#include <cstdio>
 #include "tp_string.h"
 
 namespace tp
@@ -18,7 +18,7 @@ namespace tp
             // Returns the remaining space in the internal buffer.
             size_t remaining_space()
             {
-                return buffer_size - cursor - 1;
+                return buffer_size - cursor;
             }
     
             // Returns a pointer to the next character in the string.
@@ -31,7 +31,7 @@ namespace tp
             // Returns a read-only pointer to the internal buffer.
             const char* get_string()
             {
-                buffer[cursor] = '\0'; // Add null terminator to end of string.
+                buffer[cursor + 1] = '\0'; // Add null terminator to end of string.
                 return buffer;
             }
     
@@ -45,6 +45,9 @@ namespace tp
             // Append an integer to this string.
             static_string_t& operator+(const int number)
             { 
+                printf("remaining %lu\n", remaining_space());
+                printf("offset %lu\n", buffer_offset() - buffer);
+
                 cursor += to_str(number, buffer_offset(), remaining_space());
                 return *this;
             }
